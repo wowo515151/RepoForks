@@ -107,64 +107,11 @@ const TARGET_REPOS = [
   }
 ];
 
-// Helper to generate a realistic 30-day historical time-series backing our charts elegantly
-function generateHistoricalPoints(
-  repoInfo: typeof TARGET_REPOS[number],
-  numDays = 30
-): ForkDataPoint[] {
-  const points: ForkDataPoint[] = [];
-  const now = new Date();
-  
-  const dates: string[] = [];
-  for (let i = numDays - 1; i >= 0; i--) {
-    const d = new Date();
-    d.setDate(now.getDate() - i);
-    dates.push(d.toISOString().split('T')[0]);
-  }
-
-  let currentForks = repoInfo.forks;
-  
-  // Pre-generate standard velocities with an organic wave cycle + weekend dips
-  const velocities: number[] = [];
-  for (let i = 0; i < numDays; i++) {
-    const dateObj = new Date(dates[i]);
-    const dayOfWeek = dateObj.getDay();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    const weekendFactor = isWeekend ? 0.6 : 1.15;
-
-    // Subtle sine wave overlay to represent trending periods
-    const waveFactor = 1 + 0.2 * Math.sin((i / numDays) * Math.PI * 3);
-    const jitter = 0.85 + Math.random() * 0.3;
-
-    const v = Math.max(1, Math.round(repoInfo.avgDailyVelocity * weekendFactor * waveFactor * jitter));
-    velocities.push(v);
-  }
-
-  // Work backward from ending forks to establish high-fidelity cumulative totals
-  const cumulativeForks: number[] = new Array(numDays);
-  cumulativeForks[numDays - 1] = currentForks;
-  for (let i = numDays - 2; i >= 0; i--) {
-    cumulativeForks[i] = cumulativeForks[i + 1] - velocities[i + 1];
-  }
-
-  for (let i = 0; i < numDays; i++) {
-    const v = velocities[i];
-    const prevV = i > 0 ? velocities[i - 1] : Math.max(1, Math.round(v * (0.9 + Math.random() * 0.2)));
-    const acc = v - prevV;
-
-    points.push({
-      date: dates[i],
-      forks: cumulativeForks[i],
-      velocity: v,
-      acceleration: acc
-    });
-  }
-
-  return points;
-}
-
 // Seed the database with comprehensive pre-built high-fidelity metrics
 export function generateSeedDatabase(): RepoForksDatabase {
+  // CRITICAL DIRECTIVE: DO NOT use simulated, projected, or fake data anywhere.
+  // We initialize the telemetry database without any historical filler. 
+  // Real data points are solely accumulated in real-time as actual live synchronizations occur.
   const repositories: GitHubRepository[] = TARGET_REPOS.map(target => {
     return {
       id: `${target.owner}/${target.name}`,
@@ -175,7 +122,7 @@ export function generateSeedDatabase(): RepoForksDatabase {
       forksCount: target.forks,
       url: `https://github.com/${target.owner}/${target.name}`,
       category: target.category,
-      dataPoints: generateHistoricalPoints(target, 30) // populated beautifully on load
+      dataPoints: [] // Initialize empty, ONLY real, live-authenticated sync data will fill this timeline.
     };
   });
 
@@ -193,7 +140,7 @@ export function generateSeedDatabase(): RepoForksDatabase {
         id: 'initial-seed',
         timestamp: new Date().toISOString(),
         status: 'success',
-        message: 'Database initialized with beautiful pre-seeded high-fidelity metrics.',
+        message: 'Database initialized with real repositories. Chronological charts will establish as authentic data is pulled from GitHub.',
         reposUpdated: TARGET_REPOS.map(t => `${t.owner}/${t.name}`),
         callsIncremented: 0
       }
@@ -230,79 +177,7 @@ export function saveDatabase(db: RepoForksDatabase): void {
   }
 }
 
-// High-fidelity baseline extrapolation mode for rate-limited, offline, or token-less environments
-function extrapolateRepoData(repo: GitHubRepository, avgDailyVelocity: number) {
-  // If no data points exist, generate a full 30-day realistic sweep
-  if (!repo.dataPoints || repo.dataPoints.length === 0) {
-    const matched = TARGET_REPOS.find(t => `${t.owner}/${t.name}` === repo.id);
-    const initialForks = matched ? matched.forks : (repo.forksCount || 5000);
-    const initialStars = matched ? matched.stars : (repo.stars || 10000);
-    repo.forksCount = initialForks;
-    repo.stars = initialStars;
-    repo.dataPoints = generateHistoricalPoints(matched || {
-      owner: repo.owner,
-      name: repo.name,
-      category: repo.category,
-      stars: initialStars,
-      forks: initialForks,
-      avgDailyVelocity: avgDailyVelocity,
-      description: repo.description
-    }, 30);
-    return;
-  }
-
-  const now = new Date();
-  const todayStr = now.toISOString().split('T')[0];
-  
-  const lastPoint = repo.dataPoints[repo.dataPoints.length - 1];
-  if (!lastPoint) return;
-
-  if (lastPoint.date === todayStr) {
-    // Already has a point for today, nothing to update
-    return;
-  }
-
-  // Calculate elapsed days
-  const lastDate = new Date(lastPoint.date);
-  const diffTime = Math.abs(now.getTime() - lastDate.getTime());
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-  let currentForks = lastPoint.forks;
-  let lastVelocity = lastPoint.velocity;
-
-  for (let i = 1; i <= diffDays; i++) {
-    const nextDateObj = new Date(lastDate);
-    nextDateObj.setDate(lastDate.getDate() + i);
-    const nextDateStr = nextDateObj.toISOString().split('T')[0];
-
-    if (nextDateStr > todayStr) {
-      break;
-    }
-
-    const dayOfWeek = nextDateObj.getDay();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    const weekendFactor = isWeekend ? 0.65 : 1.15;
-    const jitter = 0.85 + Math.random() * 0.3;
-    
-    const v = Math.max(1, Math.round(avgDailyVelocity * weekendFactor * jitter));
-    currentForks += v;
-    const acc = v - lastVelocity;
-
-    repo.dataPoints.push({
-      date: nextDateStr,
-      forks: currentForks,
-      velocity: v,
-      acceleration: acc
-    });
-
-    lastVelocity = v;
-  }
-
-  repo.forksCount = currentForks;
-  repo.dataPoints = repo.dataPoints.sort((a, b) => a.date.localeCompare(b.date));
-}
-
-// Refresh/Query GitHub API to get live statistics or gracefully fallback to baseline calculations
+// Refresh/Query GitHub API to get live statistics without any simulated fallback filler.
 export async function runForksRefresh(optionalGithubToken?: string): Promise<RepoForksDatabase> {
   const db = getDatabase();
   const updatedRepos: string[] = [];
@@ -324,21 +199,14 @@ export async function runForksRefresh(optionalGithubToken?: string): Promise<Rep
     headers['Authorization'] = `token ${optionalGithubToken}`;
   }
 
-  // Rate limit calculations (strict safety cutoffs)
-  const apiLimitExceeded = db.apiUsage.requestsMade >= db.apiUsage.safeRateLimit;
-  let API_RATE_LIMIT_HIT = apiLimitExceeded || !optionalGithubToken;
+  // Pure data constraint: We never extrapolate or simulate points.
+  // In case of lack of tokens, rate exhaustion, or network failures, we leave existing data unmodified.
+  // This maintains absolute cryptographic and operational fidelity.
+  let API_RATE_LIMIT_HIT = false;
 
   for (const repo of db.repositories) {
-    const targetConfig = TARGET_REPOS.find(t => `${t.owner}/${t.name}` === repo.id) || {
-      avgDailyVelocity: 15,
-      stars: repo.stars || 5000,
-      forks: repo.forksCount || 1000
-    };
-
     if (API_RATE_LIMIT_HIT) {
-      // Gracefully update via our beautiful baseline extrapolation - ZERO SKIPS, ZERO FAILED LOGS!
-      extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-      updatedRepos.push(`${repo.id} (Calculated)`);
+      updatedRepos.push(`${repo.id} (Skipped - Rate limit hit/Unauthorized)`);
       continue;
     }
 
@@ -360,17 +228,16 @@ export async function runForksRefresh(optionalGithubToken?: string): Promise<Rep
 
       if (!repoRes.ok) {
         if (repoRes.status === 403 || repoRes.status === 429) {
-          console.warn(`GitHub API limit reached. Resiliently utilizing baseline simulation for ${repo.id}.`);
+          console.warn(`GitHub API limit reached. Skipping sync updates for ${repo.id} to preserve exact live data.`);
           API_RATE_LIMIT_HIT = true;
           db.apiUsage.remainingRequests = 0;
-          extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-          updatedRepos.push(`${repo.id} (Calculated)`);
+          updatedRepos.push(`${repo.id} (Skipped - Rate Limited)`);
           continue;
         }
         
-        // If other error (like offline/DNS), fallback
-        extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-        updatedRepos.push(`${repo.id} (Calculated)`);
+        // Network errors or invalid configs result in simple visual skips
+        console.warn(`Failed to fetch metadata for ${repo.id}: Status ${repoRes.status}`);
+        updatedRepos.push(`${repo.id} (Skipped - API Error ${repoRes.status})`);
         continue;
       }
 
@@ -390,7 +257,7 @@ export async function runForksRefresh(optionalGithubToken?: string): Promise<Rep
         const forksRes = await fetch(`https://api.github.com/repos/${repo.owner}/${repo.name}/forks?per_page=100&page=${page}`, { headers });
         if (!forksRes.ok) {
           if (forksRes.status === 403 || forksRes.status === 429) {
-            console.warn(`GitHub API limit reached while querying forks list. Falling back to extrapolation for ${repo.id}.`);
+            console.warn(`GitHub API limit reached while querying forks list. Skipping sync updates for ${repo.id}.`);
             API_RATE_LIMIT_HIT = true;
             db.apiUsage.remainingRequests = 0;
             break;
@@ -414,8 +281,7 @@ export async function runForksRefresh(optionalGithubToken?: string): Promise<Rep
       }
 
       if (API_RATE_LIMIT_HIT) {
-        extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-        updatedRepos.push(`${repo.id} (Calculated)`);
+        updatedRepos.push(`${repo.id} (Skipped - Rate Limited During Fork Gathering)`);
         continue;
       }
 
@@ -461,7 +327,7 @@ export async function runForksRefresh(optionalGithubToken?: string): Promise<Rep
         });
       }
 
-      // Convert back to sorted array
+      // Convert back to sorted array, merging existing real historical entries
       const mergedPointsMap: Record<string, ForkDataPoint> = {};
       if (Array.isArray(repo.dataPoints)) {
         for (const dp of repo.dataPoints) {
@@ -479,28 +345,25 @@ export async function runForksRefresh(optionalGithubToken?: string): Promise<Rep
 
       repo.forksCount = liveForksCount;
       repo.dataPoints = sortedDataPoints;
-      updatedRepos.push(`${repo.id} (GitHub Active)`);
+      updatedRepos.push(`${repo.id} (Live Verified Data Sync)`);
 
     } catch (err) {
-      console.warn(`Error compiling GitHub live API results for ${repo.id}, applying baseline calculations.`, err);
-      extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-      updatedRepos.push(`${repo.id} (Calculated)`);
+      console.warn(`Error compiling GitHub live API results for ${repo.id}, leaving existing data unmodified.`, err);
+      updatedRepos.push(`${repo.id} (Network/System Skip)`);
     }
   }
 
   // Record API usage increase
   db.apiUsage.requestsMade += apiCallsCount;
-  db.apiUsage.remainingRequests = Math.max(0, db.apiUsage.safeRateLimit - db.apiUsage.requestsMade);
+  db.apiUsage.remainingRequests = Math.max(0, (db.apiUsage.safeRateLimit || 60) - db.apiUsage.requestsMade);
 
   // Append entry to sync history
-  const logMessage = apiCallsCount > 0
-    ? `Synchronization finished successfully (Combined ${apiCallsCount} live API queries with high-fidelity baseline simulation updates).`
-    : `Synchronization complete. Telemetry points updated flawlessly using organic baseline simulation.`;
+  const logMessage = `Synchronization complete. Combined ${apiCallsCount} live API queries of 100% genuine data (No mock/calculated values).`;
 
   const syncLogEntry: SyncLog = {
     id: `sync-${Date.now()}`,
     timestamp: new Date().toISOString(),
-    status: 'success',
+    status: API_RATE_LIMIT_HIT ? 'warning' : 'success',
     message: logMessage,
     reposUpdated: updatedRepos,
     callsIncremented: apiCallsCount
