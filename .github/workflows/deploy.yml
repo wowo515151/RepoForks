@@ -27,7 +27,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Project Dependencies
-        run: npm ci
+        run: npm install
 
       - name: Synchronize Forks Telemetry
         run: npm run sync
