@@ -131,45 +131,6 @@ var TARGET_REPOS = [
     description: "Node.js JavaScript runtime."
   }
 ];
-function generateHistoricalPoints(repoInfo, numDays = 30) {
-  const points = [];
-  const now = /* @__PURE__ */ new Date();
-  const dates = [];
-  for (let i = numDays - 1; i >= 0; i--) {
-    const d = /* @__PURE__ */ new Date();
-    d.setDate(now.getDate() - i);
-    dates.push(d.toISOString().split("T")[0]);
-  }
-  let currentForks = repoInfo.forks;
-  const velocities = [];
-  for (let i = 0; i < numDays; i++) {
-    const dateObj = new Date(dates[i]);
-    const dayOfWeek = dateObj.getDay();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    const weekendFactor = isWeekend ? 0.6 : 1.15;
-    const waveFactor = 1 + 0.2 * Math.sin(i / numDays * Math.PI * 3);
-    const jitter = 0.85 + Math.random() * 0.3;
-    const v = Math.max(1, Math.round(repoInfo.avgDailyVelocity * weekendFactor * waveFactor * jitter));
-    velocities.push(v);
-  }
-  const cumulativeForks = new Array(numDays);
-  cumulativeForks[numDays - 1] = currentForks;
-  for (let i = numDays - 2; i >= 0; i--) {
-    cumulativeForks[i] = cumulativeForks[i + 1] - velocities[i + 1];
-  }
-  for (let i = 0; i < numDays; i++) {
-    const v = velocities[i];
-    const prevV = i > 0 ? velocities[i - 1] : Math.max(1, Math.round(v * (0.9 + Math.random() * 0.2)));
-    const acc = v - prevV;
-    points.push({
-      date: dates[i],
-      forks: cumulativeForks[i],
-      velocity: v,
-      acceleration: acc
-    });
-  }
-  return points;
-}
 function generateSeedDatabase() {
   const repositories = TARGET_REPOS.map((target) => {
     return {
@@ -181,8 +142,8 @@ function generateSeedDatabase() {
       forksCount: target.forks,
       url: `https://github.com/${target.owner}/${target.name}`,
       category: target.category,
-      dataPoints: generateHistoricalPoints(target, 30)
-      // populated beautifully on load
+      dataPoints: []
+      // Initialize empty, ONLY real, live-authenticated sync data will fill this timeline.
     };
   });
   return {
@@ -199,7 +160,7 @@ function generateSeedDatabase() {
         id: "initial-seed",
         timestamp: (/* @__PURE__ */ new Date()).toISOString(),
         status: "success",
-        message: "Database initialized with beautiful pre-seeded high-fidelity metrics.",
+        message: "Database initialized with real repositories. Chronological charts will establish as authentic data is pulled from GitHub.",
         reposUpdated: TARGET_REPOS.map((t) => `${t.owner}/${t.name}`),
         callsIncremented: 0
       }
@@ -229,61 +190,6 @@ function saveDatabase(db) {
     console.error("Failed to write db.json", e);
   }
 }
-function extrapolateRepoData(repo, avgDailyVelocity) {
-  if (!repo.dataPoints || repo.dataPoints.length === 0) {
-    const matched = TARGET_REPOS.find((t) => `${t.owner}/${t.name}` === repo.id);
-    const initialForks = matched ? matched.forks : repo.forksCount || 5e3;
-    const initialStars = matched ? matched.stars : repo.stars || 1e4;
-    repo.forksCount = initialForks;
-    repo.stars = initialStars;
-    repo.dataPoints = generateHistoricalPoints(matched || {
-      owner: repo.owner,
-      name: repo.name,
-      category: repo.category,
-      stars: initialStars,
-      forks: initialForks,
-      avgDailyVelocity,
-      description: repo.description
-    }, 30);
-    return;
-  }
-  const now = /* @__PURE__ */ new Date();
-  const todayStr = now.toISOString().split("T")[0];
-  const lastPoint = repo.dataPoints[repo.dataPoints.length - 1];
-  if (!lastPoint) return;
-  if (lastPoint.date === todayStr) {
-    return;
-  }
-  const lastDate = new Date(lastPoint.date);
-  const diffTime = Math.abs(now.getTime() - lastDate.getTime());
-  const diffDays = Math.ceil(diffTime / (1e3 * 60 * 60 * 24));
-  let currentForks = lastPoint.forks;
-  let lastVelocity = lastPoint.velocity;
-  for (let i = 1; i <= diffDays; i++) {
-    const nextDateObj = new Date(lastDate);
-    nextDateObj.setDate(lastDate.getDate() + i);
-    const nextDateStr = nextDateObj.toISOString().split("T")[0];
-    if (nextDateStr > todayStr) {
-      break;
-    }
-    const dayOfWeek = nextDateObj.getDay();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    const weekendFactor = isWeekend ? 0.65 : 1.15;
-    const jitter = 0.85 + Math.random() * 0.3;
-    const v = Math.max(1, Math.round(avgDailyVelocity * weekendFactor * jitter));
-    currentForks += v;
-    const acc = v - lastVelocity;
-    repo.dataPoints.push({
-      date: nextDateStr,
-      forks: currentForks,
-      velocity: v,
-      acceleration: acc
-    });
-    lastVelocity = v;
-  }
-  repo.forksCount = currentForks;
-  repo.dataPoints = repo.dataPoints.sort((a, b) => a.date.localeCompare(b.date));
-}
 async function runForksRefresh(optionalGithubToken) {
   const db = getDatabase();
   const updatedRepos = [];
@@ -301,17 +207,10 @@ async function runForksRefresh(optionalGithubToken) {
   if (optionalGithubToken) {
     headers["Authorization"] = `token ${optionalGithubToken}`;
   }
-  const apiLimitExceeded = db.apiUsage.requestsMade >= db.apiUsage.safeRateLimit;
-  let API_RATE_LIMIT_HIT = apiLimitExceeded || !optionalGithubToken;
+  let API_RATE_LIMIT_HIT = false;
   for (const repo of db.repositories) {
-    const targetConfig = TARGET_REPOS.find((t) => `${t.owner}/${t.name}` === repo.id) || {
-      avgDailyVelocity: 15,
-      stars: repo.stars || 5e3,
-      forks: repo.forksCount || 1e3
-    };
     if (API_RATE_LIMIT_HIT) {
-      extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-      updatedRepos.push(`${repo.id} (Calculated)`);
+      updatedRepos.push(`${repo.id} (Skipped - Rate limit hit/Unauthorized)`);
       continue;
     }
     try {
@@ -328,15 +227,14 @@ async function runForksRefresh(optionalGithubToken) {
       }
       if (!repoRes.ok) {
         if (repoRes.status === 403 || repoRes.status === 429) {
-          console.warn(`GitHub API limit reached. Resiliently utilizing baseline simulation for ${repo.id}.`);
+          console.warn(`GitHub API limit reached. Skipping sync updates for ${repo.id} to preserve exact live data.`);
           API_RATE_LIMIT_HIT = true;
           db.apiUsage.remainingRequests = 0;
-          extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-          updatedRepos.push(`${repo.id} (Calculated)`);
+          updatedRepos.push(`${repo.id} (Skipped - Rate Limited)`);
           continue;
         }
-        extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-        updatedRepos.push(`${repo.id} (Calculated)`);
+        console.warn(`Failed to fetch metadata for ${repo.id}: Status ${repoRes.status}`);
+        updatedRepos.push(`${repo.id} (Skipped - API Error ${repoRes.status})`);
         continue;
       }
       const repoData = await repoRes.json();
@@ -352,7 +250,7 @@ async function runForksRefresh(optionalGithubToken) {
         const forksRes = await fetch(`https://api.github.com/repos/${repo.owner}/${repo.name}/forks?per_page=100&page=${page}`, { headers });
         if (!forksRes.ok) {
           if (forksRes.status === 403 || forksRes.status === 429) {
-            console.warn(`GitHub API limit reached while querying forks list. Falling back to extrapolation for ${repo.id}.`);
+            console.warn(`GitHub API limit reached while querying forks list. Skipping sync updates for ${repo.id}.`);
             API_RATE_LIMIT_HIT = true;
             db.apiUsage.remainingRequests = 0;
             break;
@@ -374,8 +272,7 @@ async function runForksRefresh(optionalGithubToken) {
         page++;
       }
       if (API_RATE_LIMIT_HIT) {
-        extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-        updatedRepos.push(`${repo.id} (Calculated)`);
+        updatedRepos.push(`${repo.id} (Skipped - Rate Limited During Fork Gathering)`);
         continue;
       }
       const forkCountsByDate = {};
@@ -425,20 +322,19 @@ async function runForksRefresh(optionalGithubToken) {
       const sortedDataPoints = Object.values(mergedPointsMap).sort((a, b) => a.date.localeCompare(b.date));
       repo.forksCount = liveForksCount;
       repo.dataPoints = sortedDataPoints;
-      updatedRepos.push(`${repo.id} (GitHub Active)`);
+      updatedRepos.push(`${repo.id} (Live Verified Data Sync)`);
     } catch (err) {
-      console.warn(`Error compiling GitHub live API results for ${repo.id}, applying baseline calculations.`, err);
-      extrapolateRepoData(repo, targetConfig.avgDailyVelocity);
-      updatedRepos.push(`${repo.id} (Calculated)`);
+      console.warn(`Error compiling GitHub live API results for ${repo.id}, leaving existing data unmodified.`, err);
+      updatedRepos.push(`${repo.id} (Network/System Skip)`);
     }
   }
   db.apiUsage.requestsMade += apiCallsCount;
-  db.apiUsage.remainingRequests = Math.max(0, db.apiUsage.safeRateLimit - db.apiUsage.requestsMade);
-  const logMessage = apiCallsCount > 0 ? `Synchronization finished successfully (Combined ${apiCallsCount} live API queries with high-fidelity baseline simulation updates).` : `Synchronization complete. Telemetry points updated flawlessly using organic baseline simulation.`;
+  db.apiUsage.remainingRequests = Math.max(0, (db.apiUsage.safeRateLimit || 60) - db.apiUsage.requestsMade);
+  const logMessage = `Synchronization complete. Combined ${apiCallsCount} live API queries of 100% genuine data (No mock/calculated values).`;
   const syncLogEntry = {
     id: `sync-${Date.now()}`,
     timestamp: (/* @__PURE__ */ new Date()).toISOString(),
-    status: "success",
+    status: API_RATE_LIMIT_HIT ? "warning" : "success",
     message: logMessage,
     reposUpdated: updatedRepos,
     callsIncremented: apiCallsCount
