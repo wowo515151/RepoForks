@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "prebuild": "tsx -e \"import { generateSeedDatabase, saveDatabase } from './src/dataManager.ts'; saveDatabase(generateSeedDatabase());\"",
+    "prebuild": "tsx -e \"import fs from 'fs'; import { generateSeedDatabase, saveDatabase } from './src/dataManager.ts'; if (!fs.existsSync('db.json')) { console.log('db.json not found, seeding database baseline...'); saveDatabase(generateSeedDatabase()); } else { console.log('db.json found, keeping existing database.'); }\"",
+    "sync": "tsx -e \"import { runForksRefresh } from './src/dataManager.ts'; runForksRefresh(process.env.GITHUB_TOKEN).then(() => console.log('Forks database synchronized with GitHub API.'));\"",
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
     "predeploy": "npm run build",

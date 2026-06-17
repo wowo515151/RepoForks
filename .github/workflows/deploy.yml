@@ -5,6 +5,9 @@ on:
     branches:
       - main
       - master
+  schedule:
+    - cron: '0 0 * * *' # Every day at 00:00 UTC
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
 
 permissions:
   contents: write
@@ -25,6 +28,23 @@ jobs:
 
       - name: Install Project Dependencies
         run: npm ci
+
+      - name: Synchronize Forks Telemetry
+        run: npm run sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push Updated database
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add db.json
+          if ! git diff-index --quiet HEAD db.json; then
+            git commit -m "chore: daily automatic fork database sync [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No telemetry changes in db.json. Skipping commit."
+          fi
 
       - name: Build Dashboard Static Assets
         run: npm run build
