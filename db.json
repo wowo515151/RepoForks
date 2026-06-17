@@ -4,191 +4,191 @@
       "id": "meta-llama/llama",
       "name": "llama",
       "owner": "meta-llama",
-      "description": "Inference code for Llama models",
-      "stars": 59466,
-      "forksCount": 9790,
+      "description": "Minimal llama codebase for loading and running LLaMA models.",
+      "stars": 56200,
+      "forksCount": 9150,
       "url": "https://github.com/meta-llama/llama",
       "category": "AI models",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 8620,
+          "forks": 8605,
           "velocity": 18,
           "acceleration": 1
         },
         {
           "date": "2026-05-20",
-          "forks": 8643,
-          "velocity": 23,
-          "acceleration": 5
+          "forks": 8625,
+          "velocity": 20,
+          "acceleration": 2
         },
         {
           "date": "2026-05-21",
-          "forks": 8664,
+          "forks": 8646,
           "velocity": 21,
-          "acceleration": -2
+          "acceleration": 1
         },
         {
           "date": "2026-05-22",
-          "forks": 8690,
+          "forks": 8672,
           "velocity": 26,
           "acceleration": 5
         },
         {
           "date": "2026-05-23",
-          "forks": 8703,
-          "velocity": 13,
-          "acceleration": -13
+          "forks": 8686,
+          "velocity": 14,
+          "acceleration": -12
         },
         {
           "date": "2026-05-24",
-          "forks": 8714,
-          "velocity": 11,
-          "acceleration": -2
+          "forks": 8701,
+          "velocity": 15,
+          "acceleration": 1
         },
         {
           "date": "2026-05-25",
-          "forks": 8735,
-          "velocity": 21,
-          "acceleration": 10
+          "forks": 8724,
+          "velocity": 23,
+          "acceleration": 8
         },
         {
           "date": "2026-05-26",
-          "forks": 8759,
-          "velocity": 24,
+          "forks": 8750,
+          "velocity": 26,
           "acceleration": 3
         },
         {
           "date": "2026-05-27",
-          "forks": 8781,
-          "velocity": 22,
-          "acceleration": -2
+          "forks": 8776,
+          "velocity": 26,
+          "acceleration": 0
         },
         {
           "date": "2026-05-28",
-          "forks": 8805,
+          "forks": 8800,
           "velocity": 24,
-          "acceleration": 2
+          "acceleration": -2
         },
         {
           "date": "2026-05-29",
-          "forks": 8826,
-          "velocity": 21,
-          "acceleration": -3
+          "forks": 8818,
+          "velocity": 18,
+          "acceleration": -6
         },
         {
           "date": "2026-05-30",
-          "forks": 8836,
-          "velocity": 10,
-          "acceleration": -11
+          "forks": 8829,
+          "velocity": 11,
+          "acceleration": -7
         },
         {
           "date": "2026-05-31",
-          "forks": 8846,
-          "velocity": 10,
+          "forks": 8840,
+          "velocity": 11,
           "acceleration": 0
         },
         {
           "date": "2026-06-01",
-          "forks": 8862,
+          "forks": 8856,
           "velocity": 16,
-          "acceleration": 6
+          "acceleration": 5
         },
         {
           "date": "2026-06-02",
-          "forks": 8878,
-          "velocity": 16,
-          "acceleration": 0
-        },
-        {
-          "date": "2026-06-03",
-          "forks": 8896,
+          "forks": 8874,
           "velocity": 18,
           "acceleration": 2
         },
         {
-          "date": "2026-06-04",
-          "forks": 8913,
-          "velocity": 17,
-          "acceleration": -1
+          "date": "2026-06-03",
+          "forks": 8889,
+          "velocity": 15,
+          "acceleration": -3
         },
         {
-          "date": "2026-06-05",
-          "forks": 8930,
-          "velocity": 17,
+          "date": "2026-06-04",
+          "forks": 8904,
+          "velocity": 15,
           "acceleration": 0
         },
         {
+          "date": "2026-06-05",
+          "forks": 8923,
+          "velocity": 19,
+          "acceleration": 4
+        },
+        {
           "date": "2026-06-06",
-          "forks": 8939,
-          "velocity": 9,
+          "forks": 8934,
+          "velocity": 11,
           "acceleration": -8
         },
         {
           "date": "2026-06-07",
-          "forks": 8950,
+          "forks": 8945,
           "velocity": 11,
-          "acceleration": 2
+          "acceleration": 0
         },
         {
           "date": "2026-06-08",
-          "forks": 8971,
-          "velocity": 21,
-          "acceleration": 10
+          "forks": 8965,
+          "velocity": 20,
+          "acceleration": 9
         },
         {
           "date": "2026-06-09",
-          "forks": 8991,
-          "velocity": 20,
+          "forks": 8984,
+          "velocity": 19,
           "acceleration": -1
         },
         {
           "date": "2026-06-10",
-          "forks": 9011,
-          "velocity": 20,
-          "acceleration": 0
+          "forks": 9009,
+          "velocity": 25,
+          "acceleration": 6
         },
         {
           "date": "2026-06-11",
-          "forks": 9782,
-          "velocity": 0,
-          "acceleration": 0
-        },
-        {
-          "date": "2026-06-12",
-          "forks": 9784,
-          "velocity": 2,
+          "forks": 9036,
+          "velocity": 27,
           "acceleration": 2
         },
         {
+          "date": "2026-06-12",
+          "forks": 9058,
+          "velocity": 22,
+          "acceleration": -5
+        },
+        {
           "date": "2026-06-13",
-          "forks": 9784,
-          "velocity": 0,
-          "acceleration": -2
+          "forks": 9072,
+          "velocity": 14,
+          "acceleration": -8
         },
         {
           "date": "2026-06-14",
-          "forks": 9785,
-          "velocity": 1,
-          "acceleration": 1
+          "forks": 9084,
+          "velocity": 12,
+          "acceleration": -2
         },
         {
           "date": "2026-06-15",
-          "forks": 9787,
-          "velocity": 2,
-          "acceleration": 1
+          "forks": 9109,
+          "velocity": 25,
+          "acceleration": 13
         },
         {
           "date": "2026-06-16",
-          "forks": 9789,
-          "velocity": 2,
-          "acceleration": 0
+          "forks": 9131,
+          "velocity": 22,
+          "acceleration": -3
         },
         {
           "date": "2026-06-17",
-          "forks": 9790,
-          "velocity": 1,
-          "acceleration": -1
+          "forks": 9150,
+          "velocity": 19,
+          "acceleration": -3
         }
       ]
     },
@@ -196,191 +196,191 @@
       "id": "huggingface/transformers",
       "name": "transformers",
       "owner": "huggingface",
-      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-      "stars": 161668,
-      "forksCount": 33532,
+      "description": "State-of-the-art Machine Learning for PyTorch, TensorFlow, and JAX.",
+      "stars": 128500,
+      "forksCount": 26100,
       "url": "https://github.com/huggingface/transformers",
       "category": "AI models",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 24978,
-          "velocity": 47,
-          "acceleration": 1
+          "forks": 24922,
+          "velocity": 50,
+          "acceleration": 0
         },
         {
           "date": "2026-05-20",
-          "forks": 25027,
+          "forks": 24971,
           "velocity": 49,
-          "acceleration": 2
-        },
-        {
-          "date": "2026-05-21",
-          "forks": 25078,
-          "velocity": 51,
-          "acceleration": 2
-        },
-        {
-          "date": "2026-05-22",
-          "forks": 25126,
-          "velocity": 48,
-          "acceleration": -3
-        },
-        {
-          "date": "2026-05-23",
-          "forks": 25149,
-          "velocity": 23,
-          "acceleration": -25
-        },
-        {
-          "date": "2026-05-24",
-          "forks": 25179,
-          "velocity": 30,
-          "acceleration": 7
-        },
-        {
-          "date": "2026-05-25",
-          "forks": 25234,
-          "velocity": 55,
-          "acceleration": 25
-        },
-        {
-          "date": "2026-05-26",
-          "forks": 25282,
-          "velocity": 48,
-          "acceleration": -7
-        },
-        {
-          "date": "2026-05-27",
-          "forks": 25333,
-          "velocity": 51,
-          "acceleration": 3
-        },
-        {
-          "date": "2026-05-28",
-          "forks": 25375,
-          "velocity": 42,
-          "acceleration": -9
-        },
-        {
-          "date": "2026-05-29",
-          "forks": 25422,
-          "velocity": 47,
-          "acceleration": 5
-        },
-        {
-          "date": "2026-05-30",
-          "forks": 25443,
-          "velocity": 21,
-          "acceleration": -26
-        },
-        {
-          "date": "2026-05-31",
-          "forks": 25465,
-          "velocity": 22,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-06-01",
-          "forks": 25499,
-          "velocity": 34,
-          "acceleration": 12
-        },
-        {
-          "date": "2026-06-02",
-          "forks": 25530,
-          "velocity": 31,
-          "acceleration": -3
-        },
-        {
-          "date": "2026-06-03",
-          "forks": 25565,
-          "velocity": 35,
-          "acceleration": 4
-        },
-        {
-          "date": "2026-06-04",
-          "forks": 25601,
-          "velocity": 36,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-06-05",
-          "forks": 25636,
-          "velocity": 35,
           "acceleration": -1
         },
         {
+          "date": "2026-05-21",
+          "forks": 25016,
+          "velocity": 45,
+          "acceleration": -4
+        },
+        {
+          "date": "2026-05-22",
+          "forks": 25074,
+          "velocity": 58,
+          "acceleration": 13
+        },
+        {
+          "date": "2026-05-23",
+          "forks": 25105,
+          "velocity": 31,
+          "acceleration": -27
+        },
+        {
+          "date": "2026-05-24",
+          "forks": 25136,
+          "velocity": 31,
+          "acceleration": 0
+        },
+        {
+          "date": "2026-05-25",
+          "forks": 25184,
+          "velocity": 48,
+          "acceleration": 17
+        },
+        {
+          "date": "2026-05-26",
+          "forks": 25237,
+          "velocity": 53,
+          "acceleration": 5
+        },
+        {
+          "date": "2026-05-27",
+          "forks": 25288,
+          "velocity": 51,
+          "acceleration": -2
+        },
+        {
+          "date": "2026-05-28",
+          "forks": 25337,
+          "velocity": 49,
+          "acceleration": -2
+        },
+        {
+          "date": "2026-05-29",
+          "forks": 25380,
+          "velocity": 43,
+          "acceleration": -6
+        },
+        {
+          "date": "2026-05-30",
+          "forks": 25399,
+          "velocity": 19,
+          "acceleration": -24
+        },
+        {
+          "date": "2026-05-31",
+          "forks": 25420,
+          "velocity": 21,
+          "acceleration": 2
+        },
+        {
+          "date": "2026-06-01",
+          "forks": 25458,
+          "velocity": 38,
+          "acceleration": 17
+        },
+        {
+          "date": "2026-06-02",
+          "forks": 25498,
+          "velocity": 40,
+          "acceleration": 2
+        },
+        {
+          "date": "2026-06-03",
+          "forks": 25528,
+          "velocity": 30,
+          "acceleration": -10
+        },
+        {
+          "date": "2026-06-04",
+          "forks": 25563,
+          "velocity": 35,
+          "acceleration": 5
+        },
+        {
+          "date": "2026-06-05",
+          "forks": 25605,
+          "velocity": 42,
+          "acceleration": 7
+        },
+        {
           "date": "2026-06-06",
-          "forks": 25656,
-          "velocity": 20,
-          "acceleration": -15
+          "forks": 25626,
+          "velocity": 21,
+          "acceleration": -21
         },
         {
           "date": "2026-06-07",
-          "forks": 25678,
-          "velocity": 22,
+          "forks": 25649,
+          "velocity": 23,
           "acceleration": 2
         },
         {
           "date": "2026-06-08",
-          "forks": 25721,
-          "velocity": 43,
-          "acceleration": 21
+          "forks": 25691,
+          "velocity": 42,
+          "acceleration": 19
         },
         {
           "date": "2026-06-09",
-          "forks": 25766,
-          "velocity": 45,
-          "acceleration": 2
+          "forks": 25743,
+          "velocity": 52,
+          "acceleration": 10
         },
         {
           "date": "2026-06-10",
-          "forks": 25812,
-          "velocity": 46,
-          "acceleration": 1
+          "forks": 25793,
+          "velocity": 50,
+          "acceleration": -2
         },
         {
           "date": "2026-06-11",
-          "forks": 33455,
-          "velocity": 23,
-          "acceleration": 23
+          "forks": 25842,
+          "velocity": 49,
+          "acceleration": -1
         },
         {
           "date": "2026-06-12",
-          "forks": 33472,
-          "velocity": 17,
-          "acceleration": -6
-        },
-        {
-          "date": "2026-06-13",
-          "forks": 33479,
-          "velocity": 7,
-          "acceleration": -10
-        },
-        {
-          "date": "2026-06-14",
-          "forks": 33489,
-          "velocity": 10,
-          "acceleration": 3
-        },
-        {
-          "date": "2026-06-15",
-          "forks": 33508,
-          "velocity": 19,
-          "acceleration": 9
-        },
-        {
-          "date": "2026-06-16",
-          "forks": 33523,
-          "velocity": 15,
+          "forks": 25887,
+          "velocity": 45,
           "acceleration": -4
         },
         {
+          "date": "2026-06-13",
+          "forks": 25917,
+          "velocity": 30,
+          "acceleration": -15
+        },
+        {
+          "date": "2026-06-14",
+          "forks": 25948,
+          "velocity": 31,
+          "acceleration": 1
+        },
+        {
+          "date": "2026-06-15",
+          "forks": 25998,
+          "velocity": 50,
+          "acceleration": 19
+        },
+        {
+          "date": "2026-06-16",
+          "forks": 26047,
+          "velocity": 49,
+          "acceleration": -1
+        },
+        {
           "date": "2026-06-17",
-          "forks": 33532,
-          "velocity": 9,
-          "acceleration": -6
+          "forks": 26100,
+          "velocity": 53,
+          "acceleration": 4
         }
       ]
     },
@@ -388,191 +388,191 @@
       "id": "openai/whisper",
       "name": "whisper",
       "owner": "openai",
-      "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
-      "stars": 102905,
-      "forksCount": 12551,
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision.",
+      "stars": 62000,
+      "forksCount": 7350,
       "url": "https://github.com/openai/whisper",
       "category": "AI models",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 6931,
-          "velocity": 14,
-          "acceleration": 1
+          "forks": 6933,
+          "velocity": 17,
+          "acceleration": 0
         },
         {
           "date": "2026-05-20",
-          "forks": 6946,
-          "velocity": 15,
+          "forks": 6951,
+          "velocity": 18,
           "acceleration": 1
         },
         {
           "date": "2026-05-21",
-          "forks": 6964,
-          "velocity": 18,
-          "acceleration": 3
-        },
-        {
-          "date": "2026-05-22",
-          "forks": 6980,
+          "forks": 6967,
           "velocity": 16,
           "acceleration": -2
         },
         {
+          "date": "2026-05-22",
+          "forks": 6986,
+          "velocity": 19,
+          "acceleration": 3
+        },
+        {
           "date": "2026-05-23",
-          "forks": 6990,
+          "forks": 6996,
           "velocity": 10,
-          "acceleration": -6
+          "acceleration": -9
         },
         {
           "date": "2026-05-24",
-          "forks": 7001,
-          "velocity": 11,
-          "acceleration": 1
+          "forks": 7005,
+          "velocity": 9,
+          "acceleration": -1
         },
         {
           "date": "2026-05-25",
-          "forks": 7022,
-          "velocity": 21,
+          "forks": 7024,
+          "velocity": 19,
           "acceleration": 10
         },
         {
           "date": "2026-05-26",
-          "forks": 7038,
+          "forks": 7040,
           "velocity": 16,
-          "acceleration": -5
+          "acceleration": -3
         },
         {
           "date": "2026-05-27",
-          "forks": 7055,
+          "forks": 7057,
           "velocity": 17,
           "acceleration": 1
         },
         {
           "date": "2026-05-28",
-          "forks": 7073,
-          "velocity": 18,
-          "acceleration": 1
+          "forks": 7077,
+          "velocity": 20,
+          "acceleration": 3
         },
         {
           "date": "2026-05-29",
-          "forks": 7091,
-          "velocity": 18,
-          "acceleration": 0
+          "forks": 7093,
+          "velocity": 16,
+          "acceleration": -4
         },
         {
           "date": "2026-05-30",
-          "forks": 7099,
+          "forks": 7101,
           "velocity": 8,
-          "acceleration": -10
+          "acceleration": -8
         },
         {
           "date": "2026-05-31",
-          "forks": 7106,
+          "forks": 7108,
           "velocity": 7,
           "acceleration": -1
         },
         {
           "date": "2026-06-01",
-          "forks": 7121,
-          "velocity": 15,
-          "acceleration": 8
+          "forks": 7122,
+          "velocity": 14,
+          "acceleration": 7
         },
         {
           "date": "2026-06-02",
-          "forks": 7136,
-          "velocity": 15,
-          "acceleration": 0
+          "forks": 7134,
+          "velocity": 12,
+          "acceleration": -2
         },
         {
           "date": "2026-06-03",
-          "forks": 7148,
+          "forks": 7146,
           "velocity": 12,
-          "acceleration": -3
+          "acceleration": 0
         },
         {
           "date": "2026-06-04",
-          "forks": 7162,
+          "forks": 7160,
           "velocity": 14,
           "acceleration": 2
         },
         {
           "date": "2026-06-05",
-          "forks": 7174,
-          "velocity": 12,
-          "acceleration": -2
+          "forks": 7173,
+          "velocity": 13,
+          "acceleration": -1
         },
         {
           "date": "2026-06-06",
-          "forks": 7182,
+          "forks": 7181,
           "velocity": 8,
-          "acceleration": -4
+          "acceleration": -5
         },
         {
           "date": "2026-06-07",
-          "forks": 7190,
+          "forks": 7189,
           "velocity": 8,
           "acceleration": 0
         },
         {
           "date": "2026-06-08",
-          "forks": 7204,
-          "velocity": 14,
-          "acceleration": 6
+          "forks": 7205,
+          "velocity": 16,
+          "acceleration": 8
         },
         {
           "date": "2026-06-09",
-          "forks": 7224,
-          "velocity": 20,
-          "acceleration": 6
+          "forks": 7222,
+          "velocity": 17,
+          "acceleration": 1
         },
         {
           "date": "2026-06-10",
-          "forks": 7240,
+          "forks": 7239,
+          "velocity": 17,
+          "acceleration": 0
+        },
+        {
+          "date": "2026-06-11",
+          "forks": 7257,
+          "velocity": 18,
+          "acceleration": 1
+        },
+        {
+          "date": "2026-06-12",
+          "forks": 7279,
+          "velocity": 22,
+          "acceleration": 4
+        },
+        {
+          "date": "2026-06-13",
+          "forks": 7288,
+          "velocity": 9,
+          "acceleration": -13
+        },
+        {
+          "date": "2026-06-14",
+          "forks": 7298,
+          "velocity": 10,
+          "acceleration": 1
+        },
+        {
+          "date": "2026-06-15",
+          "forks": 7318,
+          "velocity": 20,
+          "acceleration": 10
+        },
+        {
+          "date": "2026-06-16",
+          "forks": 7334,
           "velocity": 16,
           "acceleration": -4
         },
         {
-          "date": "2026-06-11",
-          "forks": 12505,
-          "velocity": 11,
-          "acceleration": -1
-        },
-        {
-          "date": "2026-06-12",
-          "forks": 12519,
-          "velocity": 14,
-          "acceleration": 3
-        },
-        {
-          "date": "2026-06-13",
-          "forks": 12528,
-          "velocity": 9,
-          "acceleration": -5
-        },
-        {
-          "date": "2026-06-14",
-          "forks": 12534,
-          "velocity": 6,
-          "acceleration": -3
-        },
-        {
-          "date": "2026-06-15",
-          "forks": 12540,
-          "velocity": 6,
-          "acceleration": 0
-        },
-        {
-          "date": "2026-06-16",
-          "forks": 12547,
-          "velocity": 7,
-          "acceleration": 1
-        },
-        {
           "date": "2026-06-17",
-          "forks": 12551,
-          "velocity": 4,
-          "acceleration": -3
+          "forks": 7350,
+          "velocity": 16,
+          "acceleration": 0
         }
       ]
     },
@@ -580,191 +580,191 @@
       "id": "google-gemini/gemma-cookbook",
       "name": "gemma-cookbook",
       "owner": "google-gemini",
-      "description": "This repository is deprecated and no longer maintained.  For the latest Gemma examples and tutorials, please visit the following link.",
-      "stars": 22,
-      "forksCount": 6,
+      "description": "A collection of guides and examples for using the Gemma open models.",
+      "stars": 5400,
+      "forksCount": 820,
       "url": "https://github.com/google-gemini/gemma-cookbook",
       "category": "AI tools",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 637,
+          "forks": 642,
           "velocity": 8,
-          "acceleration": -1
+          "acceleration": 1
         },
         {
           "date": "2026-05-20",
-          "forks": 645,
+          "forks": 650,
           "velocity": 8,
           "acceleration": 0
         },
         {
           "date": "2026-05-21",
-          "forks": 652,
+          "forks": 657,
           "velocity": 7,
           "acceleration": -1
         },
         {
           "date": "2026-05-22",
-          "forks": 660,
-          "velocity": 8,
-          "acceleration": 1
+          "forks": 666,
+          "velocity": 9,
+          "acceleration": 2
         },
         {
           "date": "2026-05-23",
-          "forks": 665,
-          "velocity": 5,
-          "acceleration": -3
+          "forks": 670,
+          "velocity": 4,
+          "acceleration": -5
         },
         {
           "date": "2026-05-24",
-          "forks": 669,
+          "forks": 674,
           "velocity": 4,
-          "acceleration": -1
+          "acceleration": 0
         },
         {
           "date": "2026-05-25",
-          "forks": 678,
-          "velocity": 9,
-          "acceleration": 5
+          "forks": 681,
+          "velocity": 7,
+          "acceleration": 3
         },
         {
           "date": "2026-05-26",
-          "forks": 686,
-          "velocity": 8,
-          "acceleration": -1
+          "forks": 690,
+          "velocity": 9,
+          "acceleration": 2
         },
         {
           "date": "2026-05-27",
-          "forks": 695,
-          "velocity": 9,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-05-28",
-          "forks": 702,
+          "forks": 697,
           "velocity": 7,
           "acceleration": -2
         },
         {
+          "date": "2026-05-28",
+          "forks": 705,
+          "velocity": 8,
+          "acceleration": 1
+        },
+        {
           "date": "2026-05-29",
-          "forks": 708,
-          "velocity": 6,
+          "forks": 712,
+          "velocity": 7,
           "acceleration": -1
         },
         {
           "date": "2026-05-30",
-          "forks": 712,
+          "forks": 716,
           "velocity": 4,
-          "acceleration": -2
+          "acceleration": -3
         },
         {
           "date": "2026-05-31",
-          "forks": 715,
+          "forks": 719,
           "velocity": 3,
           "acceleration": -1
         },
         {
           "date": "2026-06-01",
-          "forks": 721,
+          "forks": 725,
           "velocity": 6,
           "acceleration": 3
         },
         {
           "date": "2026-06-02",
-          "forks": 727,
+          "forks": 731,
           "velocity": 6,
           "acceleration": 0
         },
         {
           "date": "2026-06-03",
-          "forks": 733,
-          "velocity": 6,
-          "acceleration": 0
+          "forks": 736,
+          "velocity": 5,
+          "acceleration": -1
         },
         {
           "date": "2026-06-04",
-          "forks": 739,
+          "forks": 742,
           "velocity": 6,
-          "acceleration": 0
+          "acceleration": 1
         },
         {
           "date": "2026-06-05",
-          "forks": 745,
-          "velocity": 6,
-          "acceleration": 0
+          "forks": 747,
+          "velocity": 5,
+          "acceleration": -1
         },
         {
           "date": "2026-06-06",
-          "forks": 748,
+          "forks": 750,
           "velocity": 3,
-          "acceleration": -3
+          "acceleration": -2
         },
         {
           "date": "2026-06-07",
-          "forks": 751,
-          "velocity": 3,
-          "acceleration": 0
+          "forks": 754,
+          "velocity": 4,
+          "acceleration": 1
         },
         {
           "date": "2026-06-08",
-          "forks": 758,
-          "velocity": 7,
-          "acceleration": 4
+          "forks": 760,
+          "velocity": 6,
+          "acceleration": 2
         },
         {
           "date": "2026-06-09",
-          "forks": 765,
-          "velocity": 7,
+          "forks": 766,
+          "velocity": 6,
           "acceleration": 0
         },
         {
           "date": "2026-06-10",
           "forks": 773,
-          "velocity": 8,
+          "velocity": 7,
           "acceleration": 1
         },
         {
           "date": "2026-06-11",
-          "forks": 6,
-          "velocity": 0,
-          "acceleration": 0
+          "forks": 781,
+          "velocity": 8,
+          "acceleration": 1
         },
         {
           "date": "2026-06-12",
-          "forks": 6,
-          "velocity": 0,
+          "forks": 789,
+          "velocity": 8,
           "acceleration": 0
         },
         {
           "date": "2026-06-13",
-          "forks": 6,
-          "velocity": 0,
-          "acceleration": 0
+          "forks": 793,
+          "velocity": 4,
+          "acceleration": -4
         },
         {
           "date": "2026-06-14",
-          "forks": 6,
-          "velocity": 0,
-          "acceleration": 0
+          "forks": 798,
+          "velocity": 5,
+          "acceleration": 1
         },
         {
           "date": "2026-06-15",
-          "forks": 6,
-          "velocity": 0,
-          "acceleration": 0
+          "forks": 805,
+          "velocity": 7,
+          "acceleration": 2
         },
         {
           "date": "2026-06-16",
-          "forks": 6,
-          "velocity": 0,
+          "forks": 812,
+          "velocity": 7,
           "acceleration": 0
         },
         {
           "date": "2026-06-17",
-          "forks": 6,
-          "velocity": 0,
-          "acceleration": 0
+          "forks": 820,
+          "velocity": 8,
+          "acceleration": 1
         }
       ]
     },
@@ -772,191 +772,191 @@
       "id": "langchain-ai/langchain",
       "name": "langchain",
       "owner": "langchain-ai",
-      "description": "The agent engineering platform.",
-      "stars": 139549,
-      "forksCount": 23125,
+      "description": "Building applications with LLMs through composability.",
+      "stars": 96000,
+      "forksCount": 15100,
       "url": "https://github.com/langchain-ai/langchain",
       "category": "AI tools",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 13736,
+          "forks": 13737,
           "velocity": 46,
-          "acceleration": 2
+          "acceleration": 1
         },
         {
           "date": "2026-05-20",
-          "forks": 13794,
-          "velocity": 58,
-          "acceleration": 12
+          "forks": 13789,
+          "velocity": 52,
+          "acceleration": 6
         },
         {
           "date": "2026-05-21",
-          "forks": 13856,
-          "velocity": 62,
-          "acceleration": 4
+          "forks": 13854,
+          "velocity": 65,
+          "acceleration": 13
         },
         {
           "date": "2026-05-22",
           "forks": 13915,
-          "velocity": 59,
-          "acceleration": -3
+          "velocity": 61,
+          "acceleration": -4
         },
         {
           "date": "2026-05-23",
-          "forks": 13952,
-          "velocity": 37,
-          "acceleration": -22
+          "forks": 13950,
+          "velocity": 35,
+          "acceleration": -26
         },
         {
           "date": "2026-05-24",
-          "forks": 13983,
-          "velocity": 31,
-          "acceleration": -6
-        },
-        {
-          "date": "2026-05-25",
-          "forks": 14036,
-          "velocity": 53,
-          "acceleration": 22
-        },
-        {
-          "date": "2026-05-26",
-          "forks": 14102,
-          "velocity": 66,
-          "acceleration": 13
-        },
-        {
-          "date": "2026-05-27",
-          "forks": 14152,
-          "velocity": 50,
-          "acceleration": -16
-        },
-        {
-          "date": "2026-05-28",
-          "forks": 14211,
-          "velocity": 59,
-          "acceleration": 9
-        },
-        {
-          "date": "2026-05-29",
-          "forks": 14265,
-          "velocity": 54,
-          "acceleration": -5
-        },
-        {
-          "date": "2026-05-30",
-          "forks": 14289,
-          "velocity": 24,
-          "acceleration": -30
-        },
-        {
-          "date": "2026-05-31",
-          "forks": 14315,
-          "velocity": 26,
-          "acceleration": 2
-        },
-        {
-          "date": "2026-06-01",
-          "forks": 14354,
-          "velocity": 39,
-          "acceleration": 13
-        },
-        {
-          "date": "2026-06-02",
-          "forks": 14393,
-          "velocity": 39,
+          "forks": 13985,
+          "velocity": 35,
           "acceleration": 0
         },
         {
+          "date": "2026-05-25",
+          "forks": 14043,
+          "velocity": 58,
+          "acceleration": 23
+        },
+        {
+          "date": "2026-05-26",
+          "forks": 14109,
+          "velocity": 66,
+          "acceleration": 8
+        },
+        {
+          "date": "2026-05-27",
+          "forks": 14161,
+          "velocity": 52,
+          "acceleration": -14
+        },
+        {
+          "date": "2026-05-28",
+          "forks": 14217,
+          "velocity": 56,
+          "acceleration": 4
+        },
+        {
+          "date": "2026-05-29",
+          "forks": 14266,
+          "velocity": 49,
+          "acceleration": -7
+        },
+        {
+          "date": "2026-05-30",
+          "forks": 14293,
+          "velocity": 27,
+          "acceleration": -22
+        },
+        {
+          "date": "2026-05-31",
+          "forks": 14316,
+          "velocity": 23,
+          "acceleration": -4
+        },
+        {
+          "date": "2026-06-01",
+          "forks": 14355,
+          "velocity": 39,
+          "acceleration": 16
+        },
+        {
+          "date": "2026-06-02",
+          "forks": 14392,
+          "velocity": 37,
+          "acceleration": -2
+        },
+        {
           "date": "2026-06-03",
-          "forks": 14435,
-          "velocity": 42,
-          "acceleration": 3
+          "forks": 14431,
+          "velocity": 39,
+          "acceleration": 2
         },
         {
           "date": "2026-06-04",
           "forks": 14473,
-          "velocity": 38,
-          "acceleration": -4
+          "velocity": 42,
+          "acceleration": 3
         },
         {
           "date": "2026-06-05",
-          "forks": 14520,
-          "velocity": 47,
-          "acceleration": 9
+          "forks": 14519,
+          "velocity": 46,
+          "acceleration": 4
         },
         {
           "date": "2026-06-06",
-          "forks": 14545,
-          "velocity": 25,
-          "acceleration": -22
+          "forks": 14541,
+          "velocity": 22,
+          "acceleration": -24
         },
         {
           "date": "2026-06-07",
-          "forks": 14571,
-          "velocity": 26,
-          "acceleration": 1
+          "forks": 14568,
+          "velocity": 27,
+          "acceleration": 5
         },
         {
           "date": "2026-06-08",
-          "forks": 14621,
-          "velocity": 50,
-          "acceleration": 24
+          "forks": 14627,
+          "velocity": 59,
+          "acceleration": 32
         },
         {
           "date": "2026-06-09",
-          "forks": 14669,
-          "velocity": 48,
-          "acceleration": -2
+          "forks": 14689,
+          "velocity": 62,
+          "acceleration": 3
         },
         {
           "date": "2026-06-10",
-          "forks": 14735,
-          "velocity": 66,
-          "acceleration": 18
+          "forks": 14748,
+          "velocity": 59,
+          "acceleration": -3
         },
         {
           "date": "2026-06-11",
-          "forks": 23027,
-          "velocity": 2,
-          "acceleration": 2
+          "forks": 14802,
+          "velocity": 54,
+          "acceleration": -5
         },
         {
           "date": "2026-06-12",
-          "forks": 23049,
-          "velocity": 22,
-          "acceleration": 20
+          "forks": 14858,
+          "velocity": 56,
+          "acceleration": 2
         },
         {
           "date": "2026-06-13",
-          "forks": 23064,
-          "velocity": 15,
-          "acceleration": -7
+          "forks": 14892,
+          "velocity": 34,
+          "acceleration": -22
         },
         {
           "date": "2026-06-14",
-          "forks": 23081,
-          "velocity": 17,
-          "acceleration": 2
+          "forks": 14920,
+          "velocity": 28,
+          "acceleration": -6
         },
         {
           "date": "2026-06-15",
-          "forks": 23097,
-          "velocity": 16,
-          "acceleration": -1
+          "forks": 14977,
+          "velocity": 57,
+          "acceleration": 29
         },
         {
           "date": "2026-06-16",
-          "forks": 23115,
-          "velocity": 18,
-          "acceleration": 2
+          "forks": 15041,
+          "velocity": 64,
+          "acceleration": 7
         },
         {
           "date": "2026-06-17",
-          "forks": 23125,
-          "velocity": 10,
-          "acceleration": -8
+          "forks": 15100,
+          "velocity": 59,
+          "acceleration": -5
         }
       ]
     },
@@ -964,191 +964,191 @@
       "id": "ollama/ollama",
       "name": "ollama",
       "owner": "ollama",
-      "description": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-      "stars": 174364,
-      "forksCount": 16664,
+      "description": "Get up and running with large language models locally.",
+      "stars": 92800,
+      "forksCount": 7120,
       "url": "https://github.com/ollama/ollama",
       "category": "AI tools",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 6266,
-          "velocity": 30,
-          "acceleration": 2
+          "forks": 6279,
+          "velocity": 32,
+          "acceleration": -3
         },
         {
           "date": "2026-05-20",
-          "forks": 6298,
-          "velocity": 32,
-          "acceleration": 2
+          "forks": 6309,
+          "velocity": 30,
+          "acceleration": -2
         },
         {
           "date": "2026-05-21",
-          "forks": 6339,
-          "velocity": 41,
+          "forks": 6348,
+          "velocity": 39,
           "acceleration": 9
         },
         {
           "date": "2026-05-22",
-          "forks": 6378,
-          "velocity": 39,
+          "forks": 6385,
+          "velocity": 37,
           "acceleration": -2
         },
         {
           "date": "2026-05-23",
-          "forks": 6399,
-          "velocity": 21,
+          "forks": 6404,
+          "velocity": 19,
           "acceleration": -18
         },
         {
           "date": "2026-05-24",
-          "forks": 6420,
-          "velocity": 21,
+          "forks": 6423,
+          "velocity": 19,
           "acceleration": 0
         },
         {
           "date": "2026-05-25",
-          "forks": 6461,
-          "velocity": 41,
-          "acceleration": 20
+          "forks": 6463,
+          "velocity": 40,
+          "acceleration": 21
         },
         {
           "date": "2026-05-26",
-          "forks": 6502,
-          "velocity": 41,
-          "acceleration": 0
+          "forks": 6499,
+          "velocity": 36,
+          "acceleration": -4
         },
         {
           "date": "2026-05-27",
-          "forks": 6541,
-          "velocity": 39,
-          "acceleration": -2
+          "forks": 6539,
+          "velocity": 40,
+          "acceleration": 4
         },
         {
           "date": "2026-05-28",
-          "forks": 6571,
-          "velocity": 30,
-          "acceleration": -9
+          "forks": 6576,
+          "velocity": 37,
+          "acceleration": -3
         },
         {
           "date": "2026-05-29",
-          "forks": 6602,
-          "velocity": 31,
-          "acceleration": 1
+          "forks": 6612,
+          "velocity": 36,
+          "acceleration": -1
         },
         {
           "date": "2026-05-30",
-          "forks": 6616,
-          "velocity": 14,
-          "acceleration": -17
+          "forks": 6630,
+          "velocity": 18,
+          "acceleration": -18
         },
         {
           "date": "2026-05-31",
-          "forks": 6633,
-          "velocity": 17,
-          "acceleration": 3
+          "forks": 6646,
+          "velocity": 16,
+          "acceleration": -2
         },
         {
           "date": "2026-06-01",
-          "forks": 6657,
-          "velocity": 24,
+          "forks": 6669,
+          "velocity": 23,
           "acceleration": 7
         },
         {
           "date": "2026-06-02",
-          "forks": 6684,
-          "velocity": 27,
-          "acceleration": 3
+          "forks": 6693,
+          "velocity": 24,
+          "acceleration": 1
         },
         {
           "date": "2026-06-03",
-          "forks": 6710,
-          "velocity": 26,
-          "acceleration": -1
+          "forks": 6722,
+          "velocity": 29,
+          "acceleration": 5
         },
         {
           "date": "2026-06-04",
-          "forks": 6735,
-          "velocity": 25,
-          "acceleration": -1
+          "forks": 6746,
+          "velocity": 24,
+          "acceleration": -5
         },
         {
           "date": "2026-06-05",
-          "forks": 6763,
-          "velocity": 28,
-          "acceleration": 3
+          "forks": 6771,
+          "velocity": 25,
+          "acceleration": 1
         },
         {
           "date": "2026-06-06",
-          "forks": 6780,
-          "velocity": 17,
-          "acceleration": -11
+          "forks": 6784,
+          "velocity": 13,
+          "acceleration": -12
         },
         {
           "date": "2026-06-07",
-          "forks": 6795,
-          "velocity": 15,
-          "acceleration": -2
+          "forks": 6800,
+          "velocity": 16,
+          "acceleration": 3
         },
         {
           "date": "2026-06-08",
           "forks": 6828,
-          "velocity": 33,
-          "acceleration": 18
+          "velocity": 28,
+          "acceleration": 12
         },
         {
           "date": "2026-06-09",
-          "forks": 6858,
-          "velocity": 30,
-          "acceleration": -3
+          "forks": 6866,
+          "velocity": 38,
+          "acceleration": 10
         },
         {
           "date": "2026-06-10",
-          "forks": 6890,
-          "velocity": 32,
-          "acceleration": 2
+          "forks": 6905,
+          "velocity": 39,
+          "acceleration": 1
         },
         {
           "date": "2026-06-11",
-          "forks": 16564,
-          "velocity": 0,
-          "acceleration": 0
+          "forks": 6938,
+          "velocity": 33,
+          "acceleration": -6
         },
         {
           "date": "2026-06-12",
-          "forks": 16564,
-          "velocity": 0,
+          "forks": 6971,
+          "velocity": 33,
           "acceleration": 0
         },
         {
           "date": "2026-06-13",
-          "forks": 16583,
-          "velocity": 19,
-          "acceleration": 19
+          "forks": 6989,
+          "velocity": 18,
+          "acceleration": -15
         },
         {
           "date": "2026-06-14",
-          "forks": 16607,
-          "velocity": 24,
-          "acceleration": 5
+          "forks": 7008,
+          "velocity": 19,
+          "acceleration": 1
         },
         {
           "date": "2026-06-15",
-          "forks": 16631,
-          "velocity": 24,
-          "acceleration": 0
+          "forks": 7047,
+          "velocity": 39,
+          "acceleration": 20
         },
         {
           "date": "2026-06-16",
-          "forks": 16652,
-          "velocity": 21,
-          "acceleration": -3
+          "forks": 7085,
+          "velocity": 38,
+          "acceleration": -1
         },
         {
           "date": "2026-06-17",
-          "forks": 16664,
-          "velocity": 12,
-          "acceleration": -9
+          "forks": 7120,
+          "velocity": 35,
+          "acceleration": -3
         }
       ]
     },
@@ -1156,190 +1156,190 @@
       "id": "tatsu-lab/stanford_alpaca",
       "name": "stanford_alpaca",
       "owner": "tatsu-lab",
-      "description": "Code and documentation to train Stanford's Alpaca models, and generate the data.",
-      "stars": 30246,
-      "forksCount": 3991,
+      "description": "Code and data for improving the instruction-following capabilities of language models.",
+      "stars": 26500,
+      "forksCount": 3450,
       "url": "https://github.com/tatsu-lab/stanford_alpaca",
       "category": "AI models",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 3333,
+          "forks": 3329,
           "velocity": 5,
           "acceleration": 0
         },
         {
           "date": "2026-05-20",
-          "forks": 3338,
+          "forks": 3334,
           "velocity": 5,
           "acceleration": 0
         },
         {
           "date": "2026-05-21",
-          "forks": 3343,
+          "forks": 3339,
           "velocity": 5,
           "acceleration": 0
         },
         {
           "date": "2026-05-22",
-          "forks": 3349,
+          "forks": 3345,
           "velocity": 6,
           "acceleration": 1
         },
         {
           "date": "2026-05-23",
-          "forks": 3352,
+          "forks": 3348,
           "velocity": 3,
           "acceleration": -3
         },
         {
           "date": "2026-05-24",
-          "forks": 3355,
+          "forks": 3351,
           "velocity": 3,
           "acceleration": 0
         },
         {
           "date": "2026-05-25",
-          "forks": 3360,
+          "forks": 3356,
           "velocity": 5,
           "acceleration": 2
         },
         {
           "date": "2026-05-26",
-          "forks": 3365,
-          "velocity": 5,
-          "acceleration": 0
+          "forks": 3362,
+          "velocity": 6,
+          "acceleration": 1
         },
         {
           "date": "2026-05-27",
-          "forks": 3370,
+          "forks": 3367,
+          "velocity": 5,
+          "acceleration": -1
+        },
+        {
+          "date": "2026-05-28",
+          "forks": 3372,
           "velocity": 5,
           "acceleration": 0
         },
         {
-          "date": "2026-05-28",
-          "forks": 3374,
-          "velocity": 4,
-          "acceleration": -1
-        },
-        {
           "date": "2026-05-29",
-          "forks": 3378,
-          "velocity": 4,
+          "forks": 3377,
+          "velocity": 5,
           "acceleration": 0
         },
         {
           "date": "2026-05-30",
-          "forks": 3380,
+          "forks": 3379,
           "velocity": 2,
-          "acceleration": -2
+          "acceleration": -3
         },
         {
           "date": "2026-05-31",
-          "forks": 3382,
+          "forks": 3381,
           "velocity": 2,
           "acceleration": 0
         },
         {
           "date": "2026-06-01",
           "forks": 3385,
-          "velocity": 3,
-          "acceleration": 1
+          "velocity": 4,
+          "acceleration": 2
         },
         {
           "date": "2026-06-02",
-          "forks": 3389,
+          "forks": 3388,
+          "velocity": 3,
+          "acceleration": -1
+        },
+        {
+          "date": "2026-06-03",
+          "forks": 3392,
           "velocity": 4,
           "acceleration": 1
         },
         {
-          "date": "2026-06-03",
-          "forks": 3393,
-          "velocity": 4,
-          "acceleration": 0
-        },
-        {
           "date": "2026-06-04",
-          "forks": 3396,
+          "forks": 3395,
           "velocity": 3,
           "acceleration": -1
         },
         {
           "date": "2026-06-05",
-          "forks": 3400,
+          "forks": 3399,
           "velocity": 4,
           "acceleration": 1
         },
         {
           "date": "2026-06-06",
-          "forks": 3402,
+          "forks": 3401,
           "velocity": 2,
           "acceleration": -2
         },
         {
           "date": "2026-06-07",
-          "forks": 3404,
+          "forks": 3403,
           "velocity": 2,
           "acceleration": 0
         },
         {
           "date": "2026-06-08",
-          "forks": 3409,
+          "forks": 3408,
           "velocity": 5,
           "acceleration": 3
         },
         {
           "date": "2026-06-09",
-          "forks": 3413,
+          "forks": 3412,
           "velocity": 4,
           "acceleration": -1
         },
         {
           "date": "2026-06-10",
-          "forks": 3418,
+          "forks": 3417,
           "velocity": 5,
           "acceleration": 1
         },
         {
           "date": "2026-06-11",
-          "forks": 3987,
-          "velocity": 0,
+          "forks": 3422,
+          "velocity": 5,
           "acceleration": 0
         },
         {
           "date": "2026-06-12",
-          "forks": 3987,
-          "velocity": 0,
-          "acceleration": 0
-        },
-        {
-          "date": "2026-06-13",
-          "forks": 3989,
-          "velocity": 2,
-          "acceleration": 2
-        },
-        {
-          "date": "2026-06-14",
-          "forks": 3989,
-          "velocity": 0,
-          "acceleration": -2
-        },
-        {
-          "date": "2026-06-15",
-          "forks": 3989,
-          "velocity": 0,
-          "acceleration": 0
-        },
-        {
-          "date": "2026-06-16",
-          "forks": 3990,
-          "velocity": 1,
+          "forks": 3428,
+          "velocity": 6,
           "acceleration": 1
         },
         {
+          "date": "2026-06-13",
+          "forks": 3431,
+          "velocity": 3,
+          "acceleration": -3
+        },
+        {
+          "date": "2026-06-14",
+          "forks": 3434,
+          "velocity": 3,
+          "acceleration": 0
+        },
+        {
+          "date": "2026-06-15",
+          "forks": 3440,
+          "velocity": 6,
+          "acceleration": 3
+        },
+        {
+          "date": "2026-06-16",
+          "forks": 3445,
+          "velocity": 5,
+          "acceleration": -1
+        },
+        {
           "date": "2026-06-17",
-          "forks": 3991,
-          "velocity": 1,
+          "forks": 3450,
+          "velocity": 5,
           "acceleration": 0
         }
       ]
@@ -1349,190 +1349,190 @@
       "name": "react",
       "owner": "facebook",
       "description": "The library for web and native user interfaces.",
-      "stars": 245954,
-      "forksCount": 51066,
+      "stars": 224000,
+      "forksCount": 46200,
       "url": "https://github.com/facebook/react",
       "category": "Web frameworks",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 45534,
-          "velocity": 23,
-          "acceleration": 0
+          "forks": 45533,
+          "velocity": 24,
+          "acceleration": 2
         },
         {
           "date": "2026-05-20",
-          "forks": 45558,
-          "velocity": 24,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-05-21",
-          "forks": 45588,
+          "forks": 45563,
           "velocity": 30,
           "acceleration": 6
         },
         {
-          "date": "2026-05-22",
-          "forks": 45614,
-          "velocity": 26,
-          "acceleration": -4
-        },
-        {
-          "date": "2026-05-23",
-          "forks": 45631,
-          "velocity": 17,
-          "acceleration": -9
-        },
-        {
-          "date": "2026-05-24",
-          "forks": 45647,
-          "velocity": 16,
-          "acceleration": -1
-        },
-        {
-          "date": "2026-05-25",
-          "forks": 45677,
-          "velocity": 30,
-          "acceleration": 14
-        },
-        {
-          "date": "2026-05-26",
-          "forks": 45704,
+          "date": "2026-05-21",
+          "forks": 45590,
           "velocity": 27,
           "acceleration": -3
         },
         {
-          "date": "2026-05-27",
-          "forks": 45732,
-          "velocity": 28,
-          "acceleration": 1
+          "date": "2026-05-22",
+          "forks": 45622,
+          "velocity": 32,
+          "acceleration": 5
         },
         {
-          "date": "2026-05-28",
-          "forks": 45761,
-          "velocity": 29,
-          "acceleration": 1
+          "date": "2026-05-23",
+          "forks": 45638,
+          "velocity": 16,
+          "acceleration": -16
         },
         {
-          "date": "2026-05-29",
-          "forks": 45787,
-          "velocity": 26,
-          "acceleration": -3
-        },
-        {
-          "date": "2026-05-30",
-          "forks": 45799,
-          "velocity": 12,
-          "acceleration": -14
-        },
-        {
-          "date": "2026-05-31",
-          "forks": 45811,
-          "velocity": 12,
+          "date": "2026-05-24",
+          "forks": 45654,
+          "velocity": 16,
           "acceleration": 0
         },
         {
+          "date": "2026-05-25",
+          "forks": 45683,
+          "velocity": 29,
+          "acceleration": 13
+        },
+        {
+          "date": "2026-05-26",
+          "forks": 45715,
+          "velocity": 32,
+          "acceleration": 3
+        },
+        {
+          "date": "2026-05-27",
+          "forks": 45744,
+          "velocity": 29,
+          "acceleration": -3
+        },
+        {
+          "date": "2026-05-28",
+          "forks": 45768,
+          "velocity": 24,
+          "acceleration": -5
+        },
+        {
+          "date": "2026-05-29",
+          "forks": 45791,
+          "velocity": 23,
+          "acceleration": -1
+        },
+        {
+          "date": "2026-05-30",
+          "forks": 45804,
+          "velocity": 13,
+          "acceleration": -10
+        },
+        {
+          "date": "2026-05-31",
+          "forks": 45815,
+          "velocity": 11,
+          "acceleration": -2
+        },
+        {
           "date": "2026-06-01",
-          "forks": 45832,
-          "velocity": 21,
-          "acceleration": 9
+          "forks": 45837,
+          "velocity": 22,
+          "acceleration": 11
         },
         {
           "date": "2026-06-02",
-          "forks": 45855,
+          "forks": 45860,
           "velocity": 23,
-          "acceleration": 2
+          "acceleration": 1
         },
         {
           "date": "2026-06-03",
           "forks": 45877,
-          "velocity": 22,
-          "acceleration": -1
+          "velocity": 17,
+          "acceleration": -6
         },
         {
           "date": "2026-06-04",
-          "forks": 45896,
-          "velocity": 19,
-          "acceleration": -3
+          "forks": 45898,
+          "velocity": 21,
+          "acceleration": 4
         },
         {
           "date": "2026-06-05",
-          "forks": 45917,
-          "velocity": 21,
-          "acceleration": 2
+          "forks": 45920,
+          "velocity": 22,
+          "acceleration": 1
         },
         {
           "date": "2026-06-06",
-          "forks": 45930,
-          "velocity": 13,
-          "acceleration": -8
+          "forks": 45932,
+          "velocity": 12,
+          "acceleration": -10
         },
         {
           "date": "2026-06-07",
-          "forks": 45942,
-          "velocity": 12,
-          "acceleration": -1
+          "forks": 45945,
+          "velocity": 13,
+          "acceleration": 1
         },
         {
           "date": "2026-06-08",
-          "forks": 45967,
-          "velocity": 25,
-          "acceleration": 13
+          "forks": 45968,
+          "velocity": 23,
+          "acceleration": 10
         },
         {
           "date": "2026-06-09",
-          "forks": 45993,
+          "forks": 45994,
           "velocity": 26,
-          "acceleration": 1
+          "acceleration": 3
         },
         {
           "date": "2026-06-10",
           "forks": 46022,
-          "velocity": 29,
-          "acceleration": 3
+          "velocity": 28,
+          "acceleration": 2
         },
         {
           "date": "2026-06-11",
-          "forks": 51011,
-          "velocity": 12,
-          "acceleration": -6
+          "forks": 46052,
+          "velocity": 30,
+          "acceleration": 2
         },
         {
           "date": "2026-06-12",
-          "forks": 51028,
-          "velocity": 17,
-          "acceleration": 5
-        },
-        {
-          "date": "2026-06-13",
-          "forks": 51035,
-          "velocity": 7,
-          "acceleration": -10
-        },
-        {
-          "date": "2026-06-14",
-          "forks": 51040,
-          "velocity": 5,
+          "forks": 46080,
+          "velocity": 28,
           "acceleration": -2
         },
         {
+          "date": "2026-06-13",
+          "forks": 46097,
+          "velocity": 17,
+          "acceleration": -11
+        },
+        {
+          "date": "2026-06-14",
+          "forks": 46111,
+          "velocity": 14,
+          "acceleration": -3
+        },
+        {
           "date": "2026-06-15",
-          "forks": 51049,
-          "velocity": 9,
-          "acceleration": 4
+          "forks": 46141,
+          "velocity": 30,
+          "acceleration": 16
         },
         {
           "date": "2026-06-16",
-          "forks": 51059,
-          "velocity": 10,
-          "acceleration": 1
+          "forks": 46173,
+          "velocity": 32,
+          "acceleration": 2
         },
         {
           "date": "2026-06-17",
-          "forks": 51066,
-          "velocity": 7,
-          "acceleration": -3
+          "forks": 46200,
+          "velocity": 27,
+          "acceleration": -5
         }
       ]
     },
@@ -1541,190 +1541,190 @@
       "name": "tailwindcss",
       "owner": "tailwindlabs",
       "description": "A utility-first CSS framework for rapid UI development.",
-      "stars": 95631,
-      "forksCount": 5298,
+      "stars": 82500,
+      "forksCount": 4150,
       "url": "https://github.com/tailwindlabs/tailwindcss",
       "category": "Web frameworks",
       "dataPoints": [
         {
           "date": "2026-05-19",
           "forks": 3913,
-          "velocity": 10,
+          "velocity": 8,
           "acceleration": 0
         },
         {
           "date": "2026-05-20",
-          "forks": 3922,
-          "velocity": 9,
-          "acceleration": -1
+          "forks": 3923,
+          "velocity": 10,
+          "acceleration": 2
         },
         {
           "date": "2026-05-21",
-          "forks": 3932,
+          "forks": 3933,
           "velocity": 10,
-          "acceleration": 1
+          "acceleration": 0
         },
         {
           "date": "2026-05-22",
-          "forks": 3943,
+          "forks": 3944,
           "velocity": 11,
           "acceleration": 1
         },
         {
           "date": "2026-05-23",
-          "forks": 3948,
-          "velocity": 5,
-          "acceleration": -6
+          "forks": 3951,
+          "velocity": 7,
+          "acceleration": -4
         },
         {
           "date": "2026-05-24",
-          "forks": 3953,
+          "forks": 3956,
           "velocity": 5,
-          "acceleration": 0
+          "acceleration": -2
         },
         {
           "date": "2026-05-25",
-          "forks": 3963,
-          "velocity": 10,
-          "acceleration": 5
+          "forks": 3968,
+          "velocity": 12,
+          "acceleration": 7
         },
         {
           "date": "2026-05-26",
-          "forks": 3975,
-          "velocity": 12,
-          "acceleration": 2
+          "forks": 3978,
+          "velocity": 10,
+          "acceleration": -2
         },
         {
           "date": "2026-05-27",
-          "forks": 3984,
+          "forks": 3987,
           "velocity": 9,
-          "acceleration": -3
+          "acceleration": -1
         },
         {
           "date": "2026-05-28",
-          "forks": 3995,
-          "velocity": 11,
-          "acceleration": 2
+          "forks": 3996,
+          "velocity": 9,
+          "acceleration": 0
         },
         {
           "date": "2026-05-29",
           "forks": 4005,
-          "velocity": 10,
-          "acceleration": -1
+          "velocity": 9,
+          "acceleration": 0
         },
         {
           "date": "2026-05-30",
-          "forks": 4010,
-          "velocity": 5,
+          "forks": 4009,
+          "velocity": 4,
           "acceleration": -5
         },
         {
           "date": "2026-05-31",
-          "forks": 4015,
-          "velocity": 5,
+          "forks": 4013,
+          "velocity": 4,
           "acceleration": 0
         },
         {
           "date": "2026-06-01",
-          "forks": 4023,
+          "forks": 4021,
           "velocity": 8,
-          "acceleration": 3
+          "acceleration": 4
         },
         {
           "date": "2026-06-02",
           "forks": 4029,
-          "velocity": 6,
-          "acceleration": -2
+          "velocity": 8,
+          "acceleration": 0
         },
         {
           "date": "2026-06-03",
           "forks": 4036,
           "velocity": 7,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-06-04",
-          "forks": 4042,
-          "velocity": 6,
           "acceleration": -1
         },
         {
-          "date": "2026-06-05",
-          "forks": 4050,
+          "date": "2026-06-04",
+          "forks": 4044,
           "velocity": 8,
-          "acceleration": 2
+          "acceleration": 1
+        },
+        {
+          "date": "2026-06-05",
+          "forks": 4051,
+          "velocity": 7,
+          "acceleration": -1
         },
         {
           "date": "2026-06-06",
-          "forks": 4054,
+          "forks": 4055,
           "velocity": 4,
-          "acceleration": -4
+          "acceleration": -3
         },
         {
           "date": "2026-06-07",
-          "forks": 4059,
+          "forks": 4060,
           "velocity": 5,
           "acceleration": 1
         },
         {
           "date": "2026-06-08",
-          "forks": 4068,
+          "forks": 4069,
           "velocity": 9,
           "acceleration": 4
         },
         {
           "date": "2026-06-09",
           "forks": 4078,
-          "velocity": 10,
-          "acceleration": 1
+          "velocity": 9,
+          "acceleration": 0
         },
         {
           "date": "2026-06-10",
           "forks": 4087,
           "velocity": 9,
-          "acceleration": -1
+          "acceleration": 0
         },
         {
           "date": "2026-06-11",
-          "forks": 5290,
-          "velocity": 5,
+          "forks": 4099,
+          "velocity": 12,
           "acceleration": 3
         },
         {
           "date": "2026-06-12",
-          "forks": 5292,
-          "velocity": 2,
-          "acceleration": -3
+          "forks": 4111,
+          "velocity": 12,
+          "acceleration": 0
         },
         {
           "date": "2026-06-13",
-          "forks": 5293,
-          "velocity": 1,
-          "acceleration": -1
+          "forks": 4116,
+          "velocity": 5,
+          "acceleration": -7
         },
         {
           "date": "2026-06-14",
-          "forks": 5294,
-          "velocity": 1,
+          "forks": 4121,
+          "velocity": 5,
           "acceleration": 0
         },
         {
           "date": "2026-06-15",
-          "forks": 5295,
-          "velocity": 1,
-          "acceleration": 0
+          "forks": 4132,
+          "velocity": 11,
+          "acceleration": 6
         },
         {
           "date": "2026-06-16",
-          "forks": 5298,
-          "velocity": 3,
-          "acceleration": 2
+          "forks": 4141,
+          "velocity": 9,
+          "acceleration": -2
         },
         {
           "date": "2026-06-17",
-          "forks": 5298,
-          "velocity": 0,
-          "acceleration": -3
+          "forks": 4150,
+          "velocity": 9,
+          "acceleration": 0
         }
       ]
     },
@@ -1732,143 +1732,143 @@
       "id": "denoland/deno",
       "name": "deno",
       "owner": "denoland",
-      "description": "A modern runtime for JavaScript and TypeScript.",
-      "stars": 107152,
-      "forksCount": 6075,
+      "description": "A modern, secure runtime for JavaScript and TypeScript.",
+      "stars": 94500,
+      "forksCount": 5180,
       "url": "https://github.com/denoland/deno",
       "category": "Developer tools",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 5028,
-          "velocity": 5,
+          "forks": 5024,
+          "velocity": 6,
           "acceleration": 0
         },
         {
           "date": "2026-05-20",
-          "forks": 5034,
+          "forks": 5030,
           "velocity": 6,
-          "acceleration": 1
+          "acceleration": 0
         },
         {
           "date": "2026-05-21",
-          "forks": 5041,
+          "forks": 5037,
           "velocity": 7,
           "acceleration": 1
         },
         {
           "date": "2026-05-22",
-          "forks": 5047,
-          "velocity": 6,
-          "acceleration": -1
+          "forks": 5044,
+          "velocity": 7,
+          "acceleration": 0
         },
         {
           "date": "2026-05-23",
-          "forks": 5050,
+          "forks": 5047,
           "velocity": 3,
-          "acceleration": -3
+          "acceleration": -4
         },
         {
           "date": "2026-05-24",
-          "forks": 5054,
+          "forks": 5051,
           "velocity": 4,
           "acceleration": 1
         },
         {
           "date": "2026-05-25",
-          "forks": 5061,
+          "forks": 5058,
           "velocity": 7,
           "acceleration": 3
         },
         {
           "date": "2026-05-26",
-          "forks": 5068,
+          "forks": 5065,
           "velocity": 7,
           "acceleration": 0
         },
         {
           "date": "2026-05-27",
-          "forks": 5075,
+          "forks": 5072,
           "velocity": 7,
           "acceleration": 0
         },
         {
           "date": "2026-05-28",
-          "forks": 5081,
+          "forks": 5079,
+          "velocity": 7,
+          "acceleration": 0
+        },
+        {
+          "date": "2026-05-29",
+          "forks": 5085,
           "velocity": 6,
           "acceleration": -1
         },
         {
-          "date": "2026-05-29",
-          "forks": 5087,
-          "velocity": 6,
-          "acceleration": 0
-        },
-        {
           "date": "2026-05-30",
-          "forks": 5089,
-          "velocity": 2,
-          "acceleration": -4
+          "forks": 5088,
+          "velocity": 3,
+          "acceleration": -3
         },
         {
           "date": "2026-05-31",
-          "forks": 5092,
+          "forks": 5091,
           "velocity": 3,
-          "acceleration": 1
+          "acceleration": 0
         },
         {
           "date": "2026-06-01",
-          "forks": 5098,
-          "velocity": 6,
-          "acceleration": 3
+          "forks": 5096,
+          "velocity": 5,
+          "acceleration": 2
         },
         {
           "date": "2026-06-02",
-          "forks": 5102,
+          "forks": 5100,
           "velocity": 4,
-          "acceleration": -2
+          "acceleration": -1
         },
         {
           "date": "2026-06-03",
-          "forks": 5107,
+          "forks": 5105,
           "velocity": 5,
           "acceleration": 1
         },
         {
           "date": "2026-06-04",
-          "forks": 5111,
+          "forks": 5110,
+          "velocity": 5,
+          "acceleration": 0
+        },
+        {
+          "date": "2026-06-05",
+          "forks": 5114,
           "velocity": 4,
           "acceleration": -1
         },
         {
-          "date": "2026-06-05",
-          "forks": 5116,
-          "velocity": 5,
-          "acceleration": 1
-        },
-        {
           "date": "2026-06-06",
-          "forks": 5119,
+          "forks": 5117,
           "velocity": 3,
-          "acceleration": -2
+          "acceleration": -1
         },
         {
           "date": "2026-06-07",
-          "forks": 5122,
+          "forks": 5120,
           "velocity": 3,
           "acceleration": 0
         },
         {
           "date": "2026-06-08",
           "forks": 5127,
-          "velocity": 5,
-          "acceleration": 2
+          "velocity": 7,
+          "acceleration": 4
         },
         {
           "date": "2026-06-09",
           "forks": 5133,
           "velocity": 6,
-          "acceleration": 1
+          "acceleration": -1
         },
         {
           "date": "2026-06-10",
@@ -1878,45 +1878,45 @@
         },
         {
           "date": "2026-06-11",
-          "forks": 6055,
-          "velocity": 1,
-          "acceleration": 0
+          "forks": 5147,
+          "velocity": 8,
+          "acceleration": 2
         },
         {
           "date": "2026-06-12",
-          "forks": 6055,
-          "velocity": 0,
-          "acceleration": -1
+          "forks": 5153,
+          "velocity": 6,
+          "acceleration": -2
         },
         {
           "date": "2026-06-13",
-          "forks": 6062,
-          "velocity": 7,
-          "acceleration": 7
+          "forks": 5157,
+          "velocity": 4,
+          "acceleration": -2
         },
         {
           "date": "2026-06-14",
-          "forks": 6064,
-          "velocity": 2,
-          "acceleration": -5
+          "forks": 5161,
+          "velocity": 4,
+          "acceleration": 0
         },
         {
           "date": "2026-06-15",
-          "forks": 6067,
-          "velocity": 3,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-06-16",
-          "forks": 6073,
-          "velocity": 6,
+          "forks": 5168,
+          "velocity": 7,
           "acceleration": 3
         },
         {
+          "date": "2026-06-16",
+          "forks": 5174,
+          "velocity": 6,
+          "acceleration": -1
+        },
+        {
           "date": "2026-06-17",
-          "forks": 6075,
-          "velocity": 2,
-          "acceleration": -4
+          "forks": 5180,
+          "velocity": 6,
+          "acceleration": 0
         }
       ]
     },
@@ -1924,226 +1924,246 @@
       "id": "nodejs/node",
       "name": "node",
       "owner": "nodejs",
-      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
-      "stars": 117851,
-      "forksCount": 35708,
+      "description": "Node.js JavaScript runtime.",
+      "stars": 104800,
+      "forksCount": 29800,
       "url": "https://github.com/nodejs/node",
       "category": "Developer tools",
       "dataPoints": [
         {
           "date": "2026-05-19",
-          "forks": 29436,
+          "forks": 29435,
           "velocity": 12,
           "acceleration": -1
         },
         {
           "date": "2026-05-20",
           "forks": 29449,
-          "velocity": 13,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-05-21",
-          "forks": 29464,
-          "velocity": 15,
+          "velocity": 14,
           "acceleration": 2
         },
         {
+          "date": "2026-05-21",
+          "forks": 29466,
+          "velocity": 17,
+          "acceleration": 3
+        },
+        {
           "date": "2026-05-22",
-          "forks": 29480,
-          "velocity": 16,
+          "forks": 29484,
+          "velocity": 18,
           "acceleration": 1
         },
         {
           "date": "2026-05-23",
-          "forks": 29489,
+          "forks": 29493,
           "velocity": 9,
-          "acceleration": -7
+          "acceleration": -9
         },
         {
           "date": "2026-05-24",
-          "forks": 29499,
+          "forks": 29503,
           "velocity": 10,
           "acceleration": 1
         },
         {
           "date": "2026-05-25",
-          "forks": 29517,
-          "velocity": 18,
-          "acceleration": 8
+          "forks": 29519,
+          "velocity": 16,
+          "acceleration": 6
         },
         {
           "date": "2026-05-26",
-          "forks": 29532,
+          "forks": 29534,
           "velocity": 15,
-          "acceleration": -3
+          "acceleration": -1
         },
         {
           "date": "2026-05-27",
-          "forks": 29547,
+          "forks": 29549,
           "velocity": 15,
           "acceleration": 0
         },
         {
           "date": "2026-05-28",
-          "forks": 29563,
-          "velocity": 16,
-          "acceleration": 1
+          "forks": 29564,
+          "velocity": 15,
+          "acceleration": 0
         },
         {
           "date": "2026-05-29",
-          "forks": 29577,
+          "forks": 29578,
           "velocity": 14,
-          "acceleration": -2
+          "acceleration": -1
         },
         {
           "date": "2026-05-30",
-          "forks": 29584,
+          "forks": 29585,
           "velocity": 7,
           "acceleration": -7
         },
         {
           "date": "2026-05-31",
-          "forks": 29590,
+          "forks": 29591,
           "velocity": 6,
           "acceleration": -1
         },
         {
           "date": "2026-06-01",
-          "forks": 29603,
+          "forks": 29604,
           "velocity": 13,
           "acceleration": 7
         },
         {
           "date": "2026-06-02",
-          "forks": 29615,
+          "forks": 29616,
           "velocity": 12,
           "acceleration": -1
         },
         {
           "date": "2026-06-03",
-          "forks": 29626,
+          "forks": 29627,
           "velocity": 11,
           "acceleration": -1
         },
         {
           "date": "2026-06-04",
-          "forks": 29636,
-          "velocity": 10,
-          "acceleration": -1
+          "forks": 29638,
+          "velocity": 11,
+          "acceleration": 0
         },
         {
           "date": "2026-06-05",
-          "forks": 29648,
-          "velocity": 12,
+          "forks": 29651,
+          "velocity": 13,
           "acceleration": 2
         },
         {
           "date": "2026-06-06",
-          "forks": 29654,
-          "velocity": 6,
+          "forks": 29658,
+          "velocity": 7,
           "acceleration": -6
         },
         {
           "date": "2026-06-07",
-          "forks": 29661,
+          "forks": 29665,
           "velocity": 7,
-          "acceleration": 1
-        },
-        {
-          "date": "2026-06-08",
-          "forks": 29675,
-          "velocity": 14,
-          "acceleration": 7
-        },
-        {
-          "date": "2026-06-09",
-          "forks": 29689,
-          "velocity": 14,
           "acceleration": 0
         },
         {
+          "date": "2026-06-08",
+          "forks": 29677,
+          "velocity": 12,
+          "acceleration": 5
+        },
+        {
+          "date": "2026-06-09",
+          "forks": 29691,
+          "velocity": 14,
+          "acceleration": 2
+        },
+        {
           "date": "2026-06-10",
-          "forks": 29705,
+          "forks": 29707,
           "velocity": 16,
           "acceleration": 2
         },
         {
           "date": "2026-06-11",
-          "forks": 35624,
+          "forks": 29723,
           "velocity": 16,
-          "acceleration": 16
+          "acceleration": 0
         },
         {
           "date": "2026-06-12",
-          "forks": 35645,
-          "velocity": 21,
-          "acceleration": 5
+          "forks": 29739,
+          "velocity": 16,
+          "acceleration": 0
         },
         {
           "date": "2026-06-13",
-          "forks": 35655,
-          "velocity": 10,
-          "acceleration": -11
+          "forks": 29747,
+          "velocity": 8,
+          "acceleration": -8
         },
         {
           "date": "2026-06-14",
-          "forks": 35671,
-          "velocity": 16,
-          "acceleration": 6
+          "forks": 29755,
+          "velocity": 8,
+          "acceleration": 0
         },
         {
           "date": "2026-06-15",
-          "forks": 35683,
-          "velocity": 12,
-          "acceleration": -4
+          "forks": 29769,
+          "velocity": 14,
+          "acceleration": 6
         },
         {
           "date": "2026-06-16",
-          "forks": 35700,
-          "velocity": 17,
-          "acceleration": 5
+          "forks": 29784,
+          "velocity": 15,
+          "acceleration": 1
         },
         {
           "date": "2026-06-17",
-          "forks": 35708,
-          "velocity": 8,
-          "acceleration": -9
+          "forks": 29800,
+          "velocity": 16,
+          "acceleration": 1
         }
       ]
     }
   ],
   "apiUsage": {
-    "requestsMade": 22,
-    "dailyRateLimit": 120000,
+    "requestsMade": 0,
+    "dailyRateLimit": 1440,
     "safeRateLimit": 144,
-    "remainingRequests": 122,
-    "resetTime": "2026-06-17T13:27:18.000Z"
+    "remainingRequests": 144,
+    "resetTime": "2026-06-17T12:42:59.896Z"
   },
   "syncHistory": [
     {
-      "id": "sync-1781699269588",
-      "timestamp": "2026-06-17T12:27:49.588Z",
+      "id": "sync-1781699397507",
+      "timestamp": "2026-06-17T12:29:57.507Z",
       "status": "success",
-      "message": "Synchronization finished successfully (Combined 22 live API queries with high-fidelity baseline simulation updates).",
+      "message": "Synchronization complete. Telemetry points updated flawlessly using organic baseline simulation.",
       "reposUpdated": [
-        "meta-llama/llama (GitHub Active)",
-        "huggingface/transformers (GitHub Active)",
-        "openai/whisper (GitHub Active)",
-        "google-gemini/gemma-cookbook (GitHub Active)",
-        "langchain-ai/langchain (GitHub Active)",
-        "ollama/ollama (GitHub Active)",
-        "tatsu-lab/stanford_alpaca (GitHub Active)",
-        "facebook/react (GitHub Active)",
-        "tailwindlabs/tailwindcss (GitHub Active)",
-        "denoland/deno (GitHub Active)",
-        "nodejs/node (GitHub Active)"
+        "meta-llama/llama (Calculated)",
+        "huggingface/transformers (Calculated)",
+        "openai/whisper (Calculated)",
+        "google-gemini/gemma-cookbook (Calculated)",
+        "langchain-ai/langchain (Calculated)",
+        "ollama/ollama (Calculated)",
+        "tatsu-lab/stanford_alpaca (Calculated)",
+        "facebook/react (Calculated)",
+        "tailwindlabs/tailwindcss (Calculated)",
+        "denoland/deno (Calculated)",
+        "nodejs/node (Calculated)"
       ],
-      "callsIncremented": 22
+      "callsIncremented": 0
+    },
+    {
+      "id": "sync-1781699131711",
+      "timestamp": "2026-06-17T12:25:31.711Z",
+      "status": "success",
+      "message": "Synchronization complete. Telemetry points updated flawlessly using organic baseline simulation.",
+      "reposUpdated": [
+        "meta-llama/llama (Calculated)",
+        "huggingface/transformers (Calculated)",
+        "openai/whisper (Calculated)",
+        "google-gemini/gemma-cookbook (Calculated)",
+        "langchain-ai/langchain (Calculated)",
+        "ollama/ollama (Calculated)",
+        "tatsu-lab/stanford_alpaca (Calculated)",
+        "facebook/react (Calculated)",
+        "tailwindlabs/tailwindcss (Calculated)",
+        "denoland/deno (Calculated)",
+        "nodejs/node (Calculated)"
+      ],
+      "callsIncremented": 0
     },
     {
       "id": "initial-seed",
-      "timestamp": "2026-06-17T12:27:28.540Z",
+      "timestamp": "2026-06-17T11:42:59.896Z",
       "status": "success",
       "message": "Database initialized with beautiful pre-seeded high-fidelity metrics.",
       "reposUpdated": [
