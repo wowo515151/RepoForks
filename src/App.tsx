@@ -35,6 +35,7 @@ export default function App() {
   const [isSyncing, setIsSyncing] = useState<boolean>(false);
   const [isResetting, setIsResetting] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [isStaticFallback, setIsStaticFallback] = useState<boolean>(false);
 
   // Fetch the centralized repository telemetry from Express database on mount
   useEffect(() => {
@@ -47,13 +48,28 @@ export default function App() {
       if (!response.ok) throw new Error('Could not fetch active repository metrics.');
       const data = (await response.json()) as RepoForksDatabase;
       setDbState(data);
+      setIsStaticFallback(false);
       
       // Auto-select all repositories on first load if none selected
       if (data.repositories.length > 0) {
         setSelectedRepos(data.repositories.map(r => r.id));
       }
     } catch (err: any) {
-      setErrorMessage(err.message || 'Server did not respond with compiled database records.');
+      console.warn('API fetch failed, attempting static db.json fallback:', err);
+      try {
+        const response = await fetch('./db.json');
+        if (!response.ok) throw new Error('Could not load static file db.json.');
+        const data = (await response.json()) as RepoForksDatabase;
+        setDbState(data);
+        setIsStaticFallback(true);
+        
+        // Auto-select all repositories on first load if none selected
+        if (data.repositories.length > 0) {
+          setSelectedRepos(data.repositories.map(r => r.id));
+        }
+      } catch (fallbackErr: any) {
+        setErrorMessage(err.message || 'Server did not respond with compiled database records.');
+      }
     }
   };
 
@@ -338,6 +354,13 @@ export default function App() {
         </div>
       </header>
 
+      {isStaticFallback && (
+        <div className="bg-amber-500/10 border-b border-amber-500/20 py-1.5 px-4 text-center text-xs text-amber-300 flex items-center justify-center gap-2">
+          <span className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-ping"></span>
+          <span><strong>GitHub Pages Mode</strong>: Displaying a pre-assembled static database snapshot. Real-time background sync requires a Node.js Express server backend.</span>
+        </div>
+      )}
+
       {/* --- MAIN STRUCTURE (Sidebar + Content Workspace Panel) --- */}
       <div className="flex-1 flex flex-col lg:flex-row overflow-hidden min-h-0">
         
@@ -353,23 +376,31 @@ export default function App() {
             <div className="space-y-2">
               <div className="flex items-center justify-between text-xs">
                 <span className="text-slate-400">Sync Controls:</span>
-                <span className="font-semibold text-emerald-400 bg-emerald-950/40 px-1.5 py-0.5 rounded text-[10px] font-mono border border-emerald-900/20">
-                  AUTOMATED
+                <span className={`font-semibold px-1.5 py-0.5 rounded text-[10px] font-mono border ${
+                  isStaticFallback
+                    ? 'text-amber-400 bg-amber-950/40 border-amber-900/20'
+                    : 'text-emerald-400 bg-emerald-950/40 border-emerald-900/20'
+                }`}>
+                  {isStaticFallback ? 'STATIC SNAPSHOT' : 'AUTOMATED'}
                 </span>
               </div>
               <div className="flex items-center justify-between text-xs">
                 <span className="text-slate-400">Rate Guard:</span>
                 <span className="font-semibold text-slate-300 font-mono text-[10px]">
-                  MAX 10% DAILY CAP
+                  {isStaticFallback ? 'N/A (STATIC MODE)' : 'MAX 10% DAILY CAP'}
                 </span>
               </div>
               <div className="flex items-center justify-between text-xs">
                 <span className="text-slate-400">Status:</span>
-                <span className="text-slate-200">Protected Cache</span>
+                <span className={`font-semibold text-xs ${isStaticFallback ? 'text-amber-400 font-mono text-[11px]' : 'text-slate-200'}`}>
+                  {isStaticFallback ? 'GitHub Pages Base' : 'Protected Cache'}
+                </span>
               </div>
             </div>
-            <div className="text-[10px] text-slate-500 leading-relaxed pt-1.5 border-t border-slate-800">
-              Manual triggers are locked for standard web users to safeguard GitHub rate limits and ensure maximum cache integrity.
+            <div className="text-[10px] text-slate-400 leading-relaxed pt-1.5 border-t border-slate-800">
+              {isStaticFallback 
+                ? 'Displaying offline-first JSON dataset. Run locally or stage on a backend cloud container to activate full live synchronization cycles.'
+                : 'Manual triggers are locked for standard web users to safeguard GitHub rate limits and ensure maximum cache integrity.'}
             </div>
           </section>
 

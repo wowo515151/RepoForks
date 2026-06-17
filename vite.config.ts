@@ -1,11 +1,30 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import fs from 'fs';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    base: './',
+    plugins: [
+      react(), 
+      tailwindcss(),
+      {
+        name: 'copy-db-json',
+        closeBundle() {
+          try {
+            if (fs.existsSync('db.json')) {
+              fs.mkdirSync('dist', { recursive: true });
+              fs.copyFileSync('db.json', 'dist/db.json');
+              console.log('Successfully copied db.json to dist/db.json for static pages deployment!');
+            }
+          } catch (e) {
+            console.error('Failed to copy db.json to dist/ for static deployment:', e);
+          }
+        }
+      }
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
