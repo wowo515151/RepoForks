@@ -29,6 +29,7 @@ jobs:
         run: |
           rm -f package-lock.json
           npm install
+          npm install --no-save @tailwindcss/oxide-linux-x64-gnu
 
       - name: Synchronize Forks Telemetry
         run: npm run sync
