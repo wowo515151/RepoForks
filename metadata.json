@@ -1,0 +1,8 @@
+{
+  "name": "RepoForks",
+  "description": "Chart comparisons of popular GitHub repositories tracking fork velocity and acceleration, with automated daily sync schedules and rate-limit safety controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
