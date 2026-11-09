@@ -5,8 +5,8 @@
       "name": "llama",
       "owner": "meta-llama",
       "description": "Inference code for Llama models",
-      "stars": 59620,
-      "forksCount": 9765,
+      "stars": 59622,
+      "forksCount": 9763,
       "url": "https://github.com/meta-llama/llama",
       "category": "AI models",
       "dataPoints": [
@@ -882,37 +882,43 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 9763,
+          "forks": 9761,
           "velocity": 1,
           "acceleration": -2
         },
         {
           "date": "2026-11-04",
-          "forks": 9764,
+          "forks": 9762,
           "velocity": 1,
           "acceleration": 0
         },
         {
           "date": "2026-11-05",
-          "forks": 9764,
+          "forks": 9762,
           "velocity": 0,
           "acceleration": -1
         },
         {
           "date": "2026-11-06",
-          "forks": 9765,
+          "forks": 9763,
           "velocity": 1,
           "acceleration": 1
         },
         {
           "date": "2026-11-07",
-          "forks": 9765,
+          "forks": 9763,
           "velocity": 0,
           "acceleration": -1
         },
         {
           "date": "2026-11-08",
-          "forks": 9765,
+          "forks": 9763,
+          "velocity": 0,
+          "acceleration": 0
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 9763,
           "velocity": 0,
           "acceleration": 0
         }
@@ -923,8 +929,8 @@
       "name": "transformers",
       "owner": "huggingface",
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-      "stars": 168636,
-      "forksCount": 35135,
+      "stars": 168671,
+      "forksCount": 35144,
       "url": "https://github.com/huggingface/transformers",
       "category": "AI models",
       "dataPoints": [
@@ -1800,39 +1806,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 35078,
+          "forks": 35073,
           "velocity": 20,
-          "acceleration": -2
+          "acceleration": 11
         },
         {
           "date": "2026-11-04",
-          "forks": 35093,
+          "forks": 35088,
           "velocity": 15,
           "acceleration": -5
         },
         {
           "date": "2026-11-05",
-          "forks": 35112,
+          "forks": 35107,
           "velocity": 19,
           "acceleration": 4
         },
         {
           "date": "2026-11-06",
-          "forks": 35117,
+          "forks": 35112,
           "velocity": 5,
           "acceleration": -14
         },
         {
           "date": "2026-11-07",
-          "forks": 35135,
+          "forks": 35130,
           "velocity": 18,
           "acceleration": 13
         },
         {
           "date": "2026-11-08",
-          "forks": 35135,
-          "velocity": 0,
-          "acceleration": -18
+          "forks": 35138,
+          "velocity": 8,
+          "acceleration": -10
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 35144,
+          "velocity": 6,
+          "acceleration": -2
         }
       ]
     },
@@ -1841,8 +1853,8 @@
       "name": "whisper",
       "owner": "openai",
       "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
-      "stars": 112200,
-      "forksCount": 13583,
+      "stars": 112259,
+      "forksCount": 13589,
       "url": "https://github.com/openai/whisper",
       "category": "AI models",
       "dataPoints": [
@@ -2718,39 +2730,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 13542,
+          "forks": 13539,
           "velocity": 13,
           "acceleration": -2
         },
         {
           "date": "2026-11-04",
-          "forks": 13556,
+          "forks": 13553,
           "velocity": 14,
           "acceleration": 1
         },
         {
           "date": "2026-11-05",
-          "forks": 13565,
+          "forks": 13562,
           "velocity": 9,
           "acceleration": -5
         },
         {
           "date": "2026-11-06",
-          "forks": 13573,
+          "forks": 13570,
           "velocity": 8,
           "acceleration": -1
         },
         {
           "date": "2026-11-07",
-          "forks": 13583,
+          "forks": 13580,
           "velocity": 10,
           "acceleration": 2
         },
         {
           "date": "2026-11-08",
-          "forks": 13583,
-          "velocity": 0,
-          "acceleration": -10
+          "forks": 13586,
+          "velocity": 6,
+          "acceleration": -4
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 13589,
+          "velocity": 3,
+          "acceleration": -3
         }
       ]
     },
@@ -3669,6 +3687,12 @@
           "forks": 14,
           "velocity": 0,
           "acceleration": 0
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 14,
+          "velocity": 0,
+          "acceleration": 0
         }
       ]
     },
@@ -3677,8 +3701,8 @@
       "name": "langchain",
       "owner": "langchain-ai",
       "description": "The agent engineering platform.",
-      "stars": 149179,
-      "forksCount": 25088,
+      "stars": 149229,
+      "forksCount": 25098,
       "url": "https://github.com/langchain-ai/langchain",
       "category": "AI tools",
       "dataPoints": [
@@ -4554,39 +4578,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 25020,
-          "velocity": 27,
-          "acceleration": 22
+          "forks": 25017,
+          "velocity": 19,
+          "acceleration": 19
         },
         {
           "date": "2026-11-04",
-          "forks": 25042,
+          "forks": 25039,
           "velocity": 22,
-          "acceleration": -5
+          "acceleration": 3
         },
         {
           "date": "2026-11-05",
-          "forks": 25064,
+          "forks": 25061,
           "velocity": 22,
           "acceleration": 0
         },
         {
           "date": "2026-11-06",
-          "forks": 25078,
+          "forks": 25075,
           "velocity": 14,
           "acceleration": -8
         },
         {
           "date": "2026-11-07",
-          "forks": 25088,
+          "forks": 25085,
           "velocity": 10,
           "acceleration": -4
         },
         {
           "date": "2026-11-08",
-          "forks": 25088,
-          "velocity": 0,
-          "acceleration": -10
+          "forks": 25096,
+          "velocity": 11,
+          "acceleration": 1
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 25098,
+          "velocity": 2,
+          "acceleration": -9
         }
       ]
     },
@@ -4595,8 +4625,8 @@
       "name": "ollama",
       "owner": "ollama",
       "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-      "stars": 186295,
-      "forksCount": 18960,
+      "stars": 186392,
+      "forksCount": 18972,
       "url": "https://github.com/ollama/ollama",
       "category": "AI tools",
       "dataPoints": [
@@ -5472,39 +5502,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 18860,
+          "forks": 18872,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-04",
-          "forks": 18874,
-          "velocity": 14,
-          "acceleration": 14
-        },
-        {
-          "date": "2026-11-05",
-          "forks": 18901,
-          "velocity": 27,
-          "acceleration": 13
-        },
-        {
-          "date": "2026-11-06",
-          "forks": 18928,
-          "velocity": 27,
+          "forks": 18872,
+          "velocity": 0,
           "acceleration": 0
         },
         {
+          "date": "2026-11-05",
+          "forks": 18892,
+          "velocity": 20,
+          "acceleration": 20
+        },
+        {
+          "date": "2026-11-06",
+          "forks": 18919,
+          "velocity": 27,
+          "acceleration": 7
+        },
+        {
           "date": "2026-11-07",
-          "forks": 18954,
+          "forks": 18945,
           "velocity": 26,
           "acceleration": -1
         },
         {
           "date": "2026-11-08",
-          "forks": 18960,
-          "velocity": 6,
-          "acceleration": -20
+          "forks": 18969,
+          "velocity": 24,
+          "acceleration": -2
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 18972,
+          "velocity": 3,
+          "acceleration": -21
         }
       ]
     },
@@ -5513,8 +5549,8 @@
       "name": "stanford_alpaca",
       "owner": "tatsu-lab",
       "description": "Code and documentation to train Stanford's Alpaca models, and generate the data.",
-      "stars": 30223,
-      "forksCount": 3960,
+      "stars": 30222,
+      "forksCount": 3959,
       "url": "https://github.com/tatsu-lab/stanford_alpaca",
       "category": "AI models",
       "dataPoints": [
@@ -6390,39 +6426,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 3959,
+          "forks": 3958,
           "velocity": 0,
           "acceleration": -1
         },
         {
           "date": "2026-11-04",
-          "forks": 3959,
+          "forks": 3958,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-05",
-          "forks": 3959,
+          "forks": 3958,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-06",
-          "forks": 3959,
+          "forks": 3958,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-07",
-          "forks": 3960,
+          "forks": 3959,
           "velocity": 1,
           "acceleration": 1
         },
         {
           "date": "2026-11-08",
-          "forks": 3960,
+          "forks": 3959,
           "velocity": 0,
           "acceleration": -1
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 3959,
+          "velocity": 0,
+          "acceleration": 0
         }
       ]
     },
@@ -6431,8 +6473,8 @@
       "name": "react",
       "owner": "facebook",
       "description": "The library for web and native user interfaces.",
-      "stars": 252368,
-      "forksCount": 51943,
+      "stars": 252428,
+      "forksCount": 52031,
       "url": "https://github.com/facebook/react",
       "category": "Web frameworks",
       "dataPoints": [
@@ -7308,39 +7350,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 51843,
+          "forks": 51931,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-04",
-          "forks": 51843,
+          "forks": 51931,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-05",
-          "forks": 51843,
+          "forks": 51931,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-06",
-          "forks": 51843,
+          "forks": 51931,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-07",
-          "forks": 51940,
-          "velocity": 97,
-          "acceleration": 97
+          "forks": 51933,
+          "velocity": 2,
+          "acceleration": 2
         },
         {
           "date": "2026-11-08",
-          "forks": 51943,
-          "velocity": 3,
-          "acceleration": -94
+          "forks": 52018,
+          "velocity": 85,
+          "acceleration": 83
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 52031,
+          "velocity": 13,
+          "acceleration": -72
         }
       ]
     },
@@ -7349,8 +7397,8 @@
       "name": "tailwindcss",
       "owner": "tailwindlabs",
       "description": "A utility-first CSS framework for rapid UI development.",
-      "stars": 98521,
-      "forksCount": 7112,
+      "stars": 98647,
+      "forksCount": 6862,
       "url": "https://github.com/tailwindlabs/tailwindcss",
       "category": "Web frameworks",
       "dataPoints": [
@@ -8226,39 +8274,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 7059,
+          "forks": 6794,
           "velocity": 3,
           "acceleration": -25
         },
         {
           "date": "2026-11-04",
-          "forks": 7060,
-          "velocity": 1,
-          "acceleration": -2
+          "forks": 6794,
+          "velocity": 0,
+          "acceleration": -3
         },
         {
           "date": "2026-11-05",
-          "forks": 7068,
+          "forks": 6802,
           "velocity": 8,
-          "acceleration": 7
+          "acceleration": 8
         },
         {
           "date": "2026-11-06",
-          "forks": 7086,
+          "forks": 6820,
           "velocity": 18,
           "acceleration": 10
         },
         {
           "date": "2026-11-07",
-          "forks": 7107,
+          "forks": 6841,
           "velocity": 21,
           "acceleration": 3
         },
         {
           "date": "2026-11-08",
-          "forks": 7112,
-          "velocity": 5,
-          "acceleration": -16
+          "forks": 6861,
+          "velocity": 20,
+          "acceleration": -1
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 6862,
+          "velocity": 1,
+          "acceleration": -19
         }
       ]
     },
@@ -8267,8 +8321,8 @@
       "name": "deno",
       "owner": "denoland",
       "description": "A modern runtime for JavaScript and TypeScript.",
-      "stars": 108913,
-      "forksCount": 6780,
+      "stars": 108924,
+      "forksCount": 6867,
       "url": "https://github.com/denoland/deno",
       "category": "Developer tools",
       "dataPoints": [
@@ -9144,39 +9198,45 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 6680,
+          "forks": 6767,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-04",
-          "forks": 6680,
+          "forks": 6767,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-05",
-          "forks": 6680,
+          "forks": 6767,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-06",
-          "forks": 6680,
+          "forks": 6767,
           "velocity": 0,
           "acceleration": 0
         },
         {
           "date": "2026-11-07",
-          "forks": 6778,
-          "velocity": 98,
-          "acceleration": 98
+          "forks": 6774,
+          "velocity": 7,
+          "acceleration": 7
         },
         {
           "date": "2026-11-08",
-          "forks": 6780,
-          "velocity": 2,
-          "acceleration": -96
+          "forks": 6850,
+          "velocity": 76,
+          "acceleration": 69
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 6867,
+          "velocity": 17,
+          "acceleration": -59
         }
       ]
     },
@@ -9185,8 +9245,8 @@
       "name": "node",
       "owner": "nodejs",
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
-      "stars": 123406,
-      "forksCount": 38748,
+      "stars": 123425,
+      "forksCount": 38475,
       "url": "https://github.com/nodejs/node",
       "category": "Developer tools",
       "dataPoints": [
@@ -10062,51 +10122,77 @@
         },
         {
           "date": "2026-11-03",
-          "forks": 38678,
+          "forks": 38395,
           "velocity": 17,
-          "acceleration": 4
+          "acceleration": 14
         },
         {
           "date": "2026-11-04",
-          "forks": 38691,
+          "forks": 38408,
           "velocity": 13,
           "acceleration": -4
         },
         {
           "date": "2026-11-05",
-          "forks": 38709,
+          "forks": 38426,
           "velocity": 18,
           "acceleration": 5
         },
         {
           "date": "2026-11-06",
-          "forks": 38734,
+          "forks": 38451,
           "velocity": 25,
           "acceleration": 7
         },
         {
           "date": "2026-11-07",
-          "forks": 38748,
+          "forks": 38465,
           "velocity": 14,
           "acceleration": -11
         },
         {
           "date": "2026-11-08",
-          "forks": 38748,
+          "forks": 38475,
+          "velocity": 10,
+          "acceleration": -4
+        },
+        {
+          "date": "2026-11-09",
+          "forks": 38475,
           "velocity": 0,
-          "acceleration": -14
+          "acceleration": -10
         }
       ]
     }
   ],
   "apiUsage": {
-    "requestsMade": 3190,
+    "requestsMade": 3212,
     "dailyRateLimit": 120000,
     "safeRateLimit": 144,
     "remainingRequests": 0,
-    "resetTime": "2026-11-08T04:32:41.000Z"
+    "resetTime": "2026-11-09T04:47:43.000Z"
   },
   "syncHistory": [
+    {
+      "id": "sync-1794196118665",
+      "timestamp": "2026-11-09T03:48:38.665Z",
+      "status": "success",
+      "message": "Synchronization complete. Combined 22 live API queries of 100% genuine data (No mock/calculated values).",
+      "reposUpdated": [
+        "meta-llama/llama (Live Verified Data Sync)",
+        "huggingface/transformers (Live Verified Data Sync)",
+        "openai/whisper (Live Verified Data Sync)",
+        "google-gemini/gemma-cookbook (Live Verified Data Sync)",
+        "langchain-ai/langchain (Live Verified Data Sync)",
+        "ollama/ollama (Live Verified Data Sync)",
+        "tatsu-lab/stanford_alpaca (Live Verified Data Sync)",
+        "facebook/react (Live Verified Data Sync)",
+        "tailwindlabs/tailwindcss (Live Verified Data Sync)",
+        "denoland/deno (Live Verified Data Sync)",
+        "nodejs/node (Live Verified Data Sync)"
+      ],
+      "callsIncremented": 22
+    },
     {
       "id": "sync-1794108792594",
       "timestamp": "2026-11-08T03:33:12.594Z",
@@ -11070,26 +11156,6 @@
     {
       "id": "sync-1789957838619",
       "timestamp": "2026-09-21T02:30:38.619Z",
-      "status": "success",
-      "message": "Synchronization complete. Combined 22 live API queries of 100% genuine data (No mock/calculated values).",
-      "reposUpdated": [
-        "meta-llama/llama (Live Verified Data Sync)",
-        "huggingface/transformers (Live Verified Data Sync)",
-        "openai/whisper (Live Verified Data Sync)",
-        "google-gemini/gemma-cookbook (Live Verified Data Sync)",
-        "langchain-ai/langchain (Live Verified Data Sync)",
-        "ollama/ollama (Live Verified Data Sync)",
-        "tatsu-lab/stanford_alpaca (Live Verified Data Sync)",
-        "facebook/react (Live Verified Data Sync)",
-        "tailwindlabs/tailwindcss (Live Verified Data Sync)",
-        "denoland/deno (Live Verified Data Sync)",
-        "nodejs/node (Live Verified Data Sync)"
-      ],
-      "callsIncremented": 22
-    },
-    {
-      "id": "sync-1789871582040",
-      "timestamp": "2026-09-20T02:33:02.040Z",
       "status": "success",
       "message": "Synchronization complete. Combined 22 live API queries of 100% genuine data (No mock/calculated values).",
       "reposUpdated": [
